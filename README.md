@@ -27,19 +27,19 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/godgodwinter/README-TEMPLATE-laravel">
+  <a href="https://github.com/godgodwinter/sim">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Judul Versi PreAlpha 1.21.03.05</h3>
+  <h3 align="center">SIM SEKOLAH Versi PreAlpha 0.21.07.24</h3>
 
   <p align="center">
-    Keterangan Sistem yang dibuat
+    Sistem Informasi Manajemen Sekolah
     <br />
-    <a href="https://github.com/godgodwinter/README-TEMPLATE-laravel"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/godgodwinter/sim"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://inetwork.baemon.web.id">View Demo https://inetwork.baemon.web.id</a>
+    <a href="#">View Demo</a>
     ·
     <a href="https://twitter.com/kakadlz">Report Bug</a>
     ·
@@ -74,7 +74,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot-dashboardluar]](https://github.com/godgodwinter/README-TEMPLATE-laravel)
+[![Product Name Screen Shot][product-screenshot-dashboardluar]](https://github.com/godgodwinter/sim)
 
 Ketika usaha jaringan internet anda semakin berkembang maka semakin banyak data yang perlu anda kelola. Untuk itu dengan sistem ini diharapkan dapat membantu usaha jaringan anda.
 
@@ -83,9 +83,7 @@ Ketika usaha jaringan internet anda semakin berkembang maka semakin banyak data 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)
 * [JQuery](https://jquery.com)
-* [Laravel 8](https://laravel.com)
 * [PHP 7.4+](https://php.net)
-* [Nodejs](https://node.js)
 * [gitbash](https://git-scm.com/downloads)
 * [composer](https://getcomposer.org/)
 
@@ -109,44 +107,25 @@ This is an example of how to list things you need to use the software and how to
 <!-- 1. Get a free API Key at [https://example.com](https://example.com) -->
 1. Clone the repo
    ```sh
-   git clone https://github.com/godgodwinter/README-TEMPLATE-laravel.git
+   git clone https://github.com/godgodwinter/sim.git
    ```
-2. Install menggunakan composer
+2. Buka file
    ```sh
-   composer install
+   inc/config.php
    ```
-3. Buat file .env atau copy dan edit file .env_copy kemudian sesuaikan dengan database anda
+3. Ganti //ALAMAT SITUS sesuai dengan folder anda
 
-4. jalankan server Laravel
+
+4. Ganti //KONEKSI DATABASE Sesuai dengan pengaturan database anda
+
+5.Buat database dan import sql
    ```sh
-   php artisan serve
-   ```
-5. lakukan migrasi database
-   ```sh
-   php artisan migrate
-   ```
-   atau migrate:fresh jika ingin dari data kosong
-   ```sh
-   php artisan migrate:fresh
-   ```
-6. Jika ingin menggunakan data palsu untuk testing lanjutkan langkah 6 ini
-   ```sh
-   php artisan db:seed --class=userseeder  //untuk meload data user admin@gmail.com pass 12345678
+   db/sisfokol_janissary3.sql
    ```
 
+4. buka browser dan masukkan link sesuai direktori yang telah anda buat
    ```sh
-   php artisan db:seed --class=paketseeder  //untuk meload data paket, jenis alat, jenis pendapatan , jenis pengeluaran dll
-   ```
-
-   ```sh
-   php artisan db:seed  //untuk meload data pengaturan default, nama web, motto, logo dll
-   ```
-   
-
-Buka browser dan tulis alamat berikut
-   
-   ```sh
-   http://127.0.0.1:8000/
+   http://localhost/sim //sesuaikan dengan direktori anda
    ```
 
 
@@ -154,6 +133,8 @@ Buka browser dan tulis alamat berikut
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+* [Base Aplikasi SIM Sisfokol](http://sisfokol.wordpress.com/) Aplikasi awal dibuat oleh Agus Muhajir, S.Kom berjudul "SISFOKOL JANISSARI". Kemudian kita tambahkan beberap fitur kita sesuaikan dengan aplikasi kami.
 
 
 
