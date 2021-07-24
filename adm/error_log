@@ -1,0 +1,1430 @@
+[17-Nov-2020 17:01:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[17-Nov-2020 17:23:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[17-Nov-2020 20:18:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 06:56:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 06:59:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 07:00:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 07:46:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 07:53:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 07:54:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 08:04:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 12:02:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 12:14:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 19:07:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 19:09:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 19:28:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 20:31:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 20:37:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 20:48:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 21:17:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Nov-2020 21:28:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Nov-2020 07:04:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Nov-2020 08:47:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Nov-2020 08:49:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Nov-2020 11:23:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Nov-2020 11:35:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:14:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:15:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:16:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:16:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:17:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:18:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:18:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:20:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:20:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:34:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 12:49:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:00:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:04:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:06:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:07:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:08:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:09:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:10:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:11:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:14:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:16:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:17:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:21:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:22:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:22:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:37:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:46:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[22-Nov-2020 19:43:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[22-Nov-2020 20:58:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[22-Nov-2020 21:31:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[22-Nov-2020 22:06:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 05:44:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 06:05:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 06:19:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 08:37:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 08:40:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 09:14:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Nov-2020 14:16:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Nov-2020 14:17:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Nov-2020 14:20:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Nov-2020 20:47:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Nov-2020 07:21:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Nov-2020 11:19:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Nov-2020 13:02:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Nov-2020 13:06:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Nov-2020 14:19:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Nov-2020 14:23:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Nov-2020 07:14:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Nov-2020 07:19:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Nov-2020 07:21:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Nov-2020 09:31:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Nov-2020 10:41:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Nov-2020 20:42:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-Nov-2020 08:13:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-Nov-2020 08:23:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-Nov-2020 18:51:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-Nov-2020 20:21:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-Nov-2020 21:39:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-Nov-2020 23:00:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 07:11:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 08:15:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 08:55:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 09:02:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 09:34:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 09:47:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 12:47:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 13:24:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 14:44:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 20:54:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 21:09:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[30-Nov-2020 22:31:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 07:04:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 07:34:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 07:37:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 07:44:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 07:51:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 07:53:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 08:27:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 08:38:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 08:40:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 08:41:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 08:52:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:06:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:37:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:37:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:39:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:40:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:41:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:42:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 09:58:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 10:05:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 11:46:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 12:01:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 12:19:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 14:26:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 16:07:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 18:06:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 18:22:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 18:41:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 18:55:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 18:56:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 19:03:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 19:09:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 20:05:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Dec-2020 20:45:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 07:20:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 09:00:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 09:15:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 09:38:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 09:58:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 10:02:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 11:28:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 19:27:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Dec-2020 22:02:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Dec-2020 09:10:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Dec-2020 15:11:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Dec-2020 09:28:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Dec-2020 22:15:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 06:05:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 08:31:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 08:31:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 08:31:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 13:22:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 13:23:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Dec-2020 13:23:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Dec-2020 09:02:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Dec-2020 09:08:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Dec-2020 10:03:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Dec-2020 10:53:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[10-Dec-2020 08:46:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Dec-2020 08:19:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Dec-2020 12:24:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[22-Dec-2020 10:35:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Dec-2020 15:36:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 08:40:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 08:41:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 08:48:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 08:48:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 09:25:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 14:19:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 17:22:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 17:24:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 17:24:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 17:24:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Jan-2021 13:46:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Jan-2021 19:50:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Jan-2021 09:46:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-Jan-2021 18:58:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-Jan-2021 07:24:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Feb-2021 07:56:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Feb-2021 09:03:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Feb-2021 12:11:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Feb-2021 12:11:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Feb-2021 08:31:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Feb-2021 09:37:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Feb-2021 07:18:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Feb-2021 08:29:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Feb-2021 09:06:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Feb-2021 09:09:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Feb-2021 21:23:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[16-Feb-2021 07:09:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[16-Feb-2021 07:09:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Feb-2021 08:30:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Feb-2021 09:33:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[22-Feb-2021 19:51:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Feb-2021 08:46:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Feb-2021 11:54:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Feb-2021 12:05:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Feb-2021 23:13:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Feb-2021 09:59:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Feb-2021 10:29:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-Feb-2021 11:15:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Feb-2021 08:39:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Feb-2021 09:49:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Feb-2021 11:08:05 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-Feb-2021 11:55:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 08:21:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 08:57:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 09:00:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 09:58:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 10:39:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 18:51:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[01-Mar-2021 07:11:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Mar-2021 07:46:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Mar-2021 07:29:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Mar-2021 09:15:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Mar-2021 07:16:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Mar-2021 08:48:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[05-Mar-2021 12:50:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:14:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:31:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:32:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:39:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:42:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:58:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 08:19:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 08:56:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 08:59:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 09:00:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 09:01:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 09:02:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 09:21:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 09:41:45 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 18:35:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 18:37:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 18:38:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 18:38:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Mar-2021 07:14:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Mar-2021 07:25:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Mar-2021 09:12:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Mar-2021 09:40:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[10-Mar-2021 07:00:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[10-Mar-2021 07:31:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[10-Mar-2021 11:07:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[12-Mar-2021 06:57:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[12-Mar-2021 09:17:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Mar-2021 07:25:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Mar-2021 09:06:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[17-Mar-2021 07:10:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[17-Mar-2021 07:55:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Mar-2021 08:14:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[18-Mar-2021 10:15:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Mar-2021 07:27:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[19-Mar-2021 09:52:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Apr-2021 08:44:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[24-May-2021 12:06:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-May-2021 07:11:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-May-2021 10:07:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[25-May-2021 12:00:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-May-2021 08:02:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-May-2021 08:50:28 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-May-2021 09:59:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[27-May-2021 12:03:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-May-2021 07:18:11 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-May-2021 08:55:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[28-May-2021 10:30:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[31-May-2021 08:43:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[31-May-2021 10:41:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[31-May-2021 12:01:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Jun-2021 07:15:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Jun-2021 08:57:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Jun-2021 09:34:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[02-Jun-2021 12:05:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Jun-2021 07:27:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Jun-2021 09:16:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Jun-2021 09:18:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[03-Jun-2021 11:39:50 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jun-2021 07:02:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jun-2021 08:08:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jun-2021 09:59:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jun-2021 10:17:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Jun-2021 06:51:32 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Jun-2021 09:26:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Jun-2021 09:54:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[07-Jun-2021 11:04:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Jun-2021 07:17:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Jun-2021 07:58:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Jun-2021 10:32:21 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[09-Jun-2021 07:28:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[10-Jun-2021 07:13:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Jun-2021 08:16:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/index.php(344): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88

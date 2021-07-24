@@ -1,0 +1,7 @@
+{
+    "require": {
+        "spipu/html2pdf": "^5.2",
+        "spiritix/php-chrome-html2pdf": "^1.5",
+        "fpdf/fpdf": "^1.82"
+    }
+}

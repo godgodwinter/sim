@@ -1,0 +1,65 @@
+[19-Nov-2020 07:57:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:18:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[20-Nov-2020 13:18:31 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 09:17:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/pass.php(152): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 09:20:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 09:21:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[23-Nov-2020 09:21:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Dec-2020 22:15:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/pass.php(152): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 08:48:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/pass.php(152): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[04-Jan-2021 08:48:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/reset_pass.php(233): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[15-Feb-2021 21:24:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/pass.php(152): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[26-Feb-2021 09:02:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/pass.php(152): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
+[08-Mar-2021 07:59:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_query() in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php:88
+Stack trace:
+#0 /home/smkkrome/sim.smkkromengan.sch.id/adm/s/pass.php(152): require()
+#1 {main}
+  thrown in /home/smkkrome/sim.smkkromengan.sch.id/inc/niltpl.php on line 88
