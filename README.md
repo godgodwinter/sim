@@ -76,7 +76,7 @@
 
 [![Product Name Screen Shot][product-screenshot-dashboardluar]](https://github.com/godgodwinter/sim)
 
-Ketika usaha jaringan internet anda semakin berkembang maka semakin banyak data yang perlu anda kelola. Untuk itu dengan sistem ini diharapkan dapat membantu usaha jaringan anda.
+Sistem Infromasi Manajemen Sekolah.
 
 ### Built With
 
