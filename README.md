@@ -153,16 +153,16 @@ Project Link: [https://github.com/godgodwinter/inetwork](https://github.com/godg
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/godgodwinter/inetwork.svg?style=for-the-badge
-[contributors-url]: https://github.com/godgodwinter/inetwork/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/godgodwinter/inetwork.svg?style=for-the-badge
-[forks-url]: https://github.com/godgodwinter/inetwork/network/members
-[stars-shield]: https://img.shields.io/github/stars/godgodwinter/inetwork.svg?style=for-the-badge
-[stars-url]: https://github.com/godgodwinter/inetwork/stargazers
-[issues-shield]: https://img.shields.io/github/issues/godgodwinter/inetwork.svg?style=for-the-badge
-[issues-url]: https://github.com/godgodwinter/inetwork/issues
-[license-shield]: https://img.shields.io/github/license/godgodwinter/inetwork.svg?style=for-the-badge
-[license-url]: https://github.com/godgodwinter/inetwork/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/godgodwinter/sim.svg?style=for-the-badge
+[contributors-url]: https://github.com/godgodwinter/sim/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/godgodwinter/sim.svg?style=for-the-badge
+[forks-url]: https://github.com/godgodwinter/sim/network/members
+[stars-shield]: https://img.shields.io/github/stars/godgodwinter/sim.svg?style=for-the-badge
+[stars-url]: https://github.com/godgodwinter/sim/stargazers
+[issues-shield]: https://img.shields.io/github/issues/godgodwinter/sim.svg?style=for-the-badge
+[issues-url]: https://github.com/godgodwinter/sim/issues
+[license-shield]: https://img.shields.io/github/license/godgodwinter/sim.svg?style=for-the-badge
+[license-url]: https://github.com/godgodwinter/sim/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.instagram.com/kukuh.sn/
 [product-screenshot-dashboardluar]: images/dashboardluar.png
