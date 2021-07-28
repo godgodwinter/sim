@@ -1069,7 +1069,7 @@ else
 			<input type="checkbox" name="item'.$nomer.'" value="'.$i_kd.'">
 	        </td>
 			<td>
-			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'">EDIT</a>
+			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'"  type="button" class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i></a>
 			</td>
 			<td>'.$i_tapel.'</td>
 			<td>'.$i_kelas.'</td>
