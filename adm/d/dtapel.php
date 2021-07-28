@@ -203,18 +203,19 @@ require("../../inc/js/checkall.js");
 
 
 //view //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-?>
 
-
-<div class="row col-md-offset-1 ">
-	<div class="col-md-11 col-sm-11">
-<?php
 echo '<form name="formx" method="post" action="'.$filenya.'">
 <table width="100%" height="300" border="0" cellspacing="3" cellpadding="0">
 <tr valign="top">
-<td>
+<td>';
+?>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="3">
+
+<div class="row  col-md-offset-1">
+	<div class="col-md-11 col-sm-11">
+<?php
+
+echo'<table width="100%" border="0" cellspacing="0" cellpadding="3">
 <tr valign="top">
 <td>
 <p>
@@ -228,12 +229,19 @@ echo '<form name="formx" method="post" action="'.$filenya.'">
 
 <p>
 <input name="btnBTL" type="submit" value="Batal" class="btn btn-primary btn-pill m-w-120">
-<input name="btnSMP" type="submit" value="Simpan" class="btn btn-danger btn-pill m-w-120">
+<input name="btnSMP" type="submit" value="Simpan" class="btn btn-success btn-pill m-w-120">
 </p>
 </td>
 </tr>
 </table>
 <br>';
+
+?>
+
+</div>
+</div>
+<div class="row">
+<?php
 
 
 //query
@@ -242,12 +250,6 @@ $qdata = mysqli_query($koneksi, "SELECT * FROM m_tapel ".
 $rdata = mysqli_fetch_assoc($qdata);
 $tdata = mysqli_num_rows($qdata);
 
-?>
-
-</div>
-</div>
-<div class="row">
-<?php
 //nek ada
 if ($tdata != 0)
 	{
@@ -307,9 +309,9 @@ if ($tdata != 0)
 	<table width="100%" border="0" cellspacing="0" cellpadding="3">
 	<tr>
 	<td>
-	<input type="button" name="Button" value="SEMUA" onClick="checkAll('.$tdata.')" class="btn btn-success">
-	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-primary">
-	<input name="btnHPS" type="submit" value="HAPUS >>" class="btn btn-danger">
+	<input type="button" name="Button" value="SEMUA" onClick="checkAll('.$tdata.')" class="btn btn-default  btn-sm">
+	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-info btn-sm">
+	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger btn-sm">
 	<input name="jml" type="hidden" value="'.$tdata.'">
 	<input name="s" type="hidden" value="'.$s.'">
 	<input name="pelkd" type="hidden" value="'.$pelkd.'">

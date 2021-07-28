@@ -242,7 +242,8 @@ ob_start();
               
                   <!-- Info boxes -->
                   
-        <div class="row col-md-offset-1">
+        <!-- <div class="row col-md-offset-1"> -->
+        <div class="row ">
           <div class="col-md-3 col-sm-6">
           <div class="widget widget-tile-2 bg-primary m-b-30">
               <div class="wt-content p-a-20 p-b-50">
