@@ -221,24 +221,41 @@ require("../../inc/js/checkall.js");
 echo '<form name="formx" method="post" action="'.$filenya.'">
 <table width="100%" height="300" border="0" cellspacing="3" cellpadding="0">
 <tr valign="top">
-<td>
+<td>';
+?>
 
-<table width="100%" border="0" cellspacing="0" cellpadding="3">
+
+<div class="row  col-md-offset-1">
+	<div class="col-md-11 col-sm-11">
+<?php
+
+echo'<table width="100%" border="0" cellspacing="0" cellpadding="3">
 <tr valign="top">
 <td>
 <p>
-<input name="kelas" type="text" value="'.$y_kelas.'" size="20" class="btn btn-warning">
+<div class="form-group">
+<label class="col-sm-3 control-label" for="form-control-3">Nama Kelas</label>
+<div class="col-sm-9">
+  <input  name="kelas" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$y_kelas.'" size="20" >
+</div>
+</div>
 </p>
 
 <p>
-<input name="btnBTL" type="submit" value="BATAL" class="btn btn-primary">
-<input name="btnSMP" type="submit" value="SIMPAN >>" class="btn btn-danger">
+<input name="btnBTL" type="submit" value="Batal" class="btn btn-primary btn-pill m-w-120">
+<input name="btnSMP" type="submit" value="Simpan" class="btn btn-success btn-pill m-w-120">
 </p>
 </td>
 </tr>
 </table>
 <br>';
 
+?>
+
+</div>
+</div>
+<div class="row">
+<?php
 
 //query
 $qdata = mysqli_query($koneksi, "SELECT * FROM m_kelas ".
@@ -251,12 +268,12 @@ $tdata = mysqli_num_rows($qdata);
 if ($tdata != 0)
 	{
 	echo '<div class="table-responsive">          
-	  <table class="table" border="1">
+	  <table class="table" border="0">
 	    <thead>
 
-		<tr bgcolor="'.$warnaheader.'">
-		<td width="1">&nbsp;</td>
-		<td width="1">&nbsp;</td>
+		<tr>
+		<th style="width: 32px"></th>
+		<th style="width: 32px"></th>
 		<td valign="top"><strong>Kelas</strong></td>
 		</tr>
 
@@ -267,16 +284,16 @@ if ($tdata != 0)
 
 	do
   		{
-		if ($warna_set ==0)
-			{
-			$warna = $warna01;
-			$warna_set = 1;
-			}
-		else
-			{
-			$warna = $warna02;
-			$warna_set = 0;
-			}
+			if ($warna_set ==0)
+				{
+				$warna ='FFFFFF';
+				$warna_set = 1;
+				}
+			else
+				{
+				$warna ='FFFFFF';
+				$warna_set = 0;
+				}
 
 		$nomer = $nomer + 1;
 
@@ -288,7 +305,7 @@ if ($tdata != 0)
 		<input type="checkbox" name="item'.$nomer.'" value="'.$i_kd.'">
 		</td>
 		<td width="1">
-		<a href="'.$filenya.'?s=edit&pelkd='.$i_kd.'"><img src="'.$sumber.'/img/edit.gif" width="16" height="16" border="0"></a>
+		<a href="'.$filenya.'?s=edit&pelkd='.$i_kd.'" type="button" class="btn btn-warning btn-sm"> <i class="zmdi zmdi-edit"></i></a>
 		</td>
 		<td valign="top">
 		'.$i_kelas.'
@@ -305,9 +322,9 @@ if ($tdata != 0)
 	<table width="500" border="0" cellspacing="0" cellpadding="3">
 	<tr>
 	<td>
-	<input type="button" name="Button" value="SEMUA" onClick="checkAll('.$tdata.')" class="btn btn-success">
-	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-primary">
-	<input name="btnHPS" type="submit" value="HAPUS >>" class="btn btn-danger">
+	<input type="button" name="Button" value="SEMUA" onClick="checkAll('.$tdata.')" class="btn  btn-default  btn-sm">
+	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-info btn-sm">
+	<input name="btnHPS" type="submit" value="HAPUS >>" class="btn btn-danger btn-sm">
 	<input name="jml" type="hidden" value="'.$tdata.'">
 	<input name="s" type="hidden" value="'.$s.'">
 	<input name="pelkd" type="hidden" value="'.$pelkd.'">
