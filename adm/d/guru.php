@@ -495,12 +495,13 @@ if ($s == "import")
 	<?php
 	echo '<form action="'.$filenya.'" method="post" enctype="multipart/form-data" name="formxx2">
 	<p>
-		<input name="filex_xls" type="file" size="30" class="btn btn-warning">
+		<input name="filex_xls" type="file" size="30" class="btn btn-default">
 	</p>
 
 	<p>
-		<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info">
-		<input name="btnIMX" type="submit" value="IMPORT >>" class="btn btn-danger">
+	
+		<input name="btnBTL" type="submit" value="Batal" class="btn btn-info btn-pill m-w-120">
+		<input name="btnIMX" type="submit" value="Import" class="btn btn-primary btn-pill m-w-120">
 	</p>
 	
 	
@@ -539,9 +540,9 @@ else if (($s == "baru") OR ($s == "edit"))
 	
 	
 	
-	<div class="row">
-
-	<div class="col-md-6">
+	
+<div class="row  col-md-offset-1">
+	<div class="col-md-11 col-sm-11">
 		
 	<?php
 	echo '<form action="'.$filenya.'" method="post" name="formx2">
@@ -549,18 +550,29 @@ else if (($s == "baru") OR ($s == "edit"))
 	
 	
 	<p>
-	NIP : 
-	<br>
-	<input name="e_nis" type="text" value="'.$e_nis.'" size="10" class="btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">NIP</label>
+	<div class="col-sm-9">
+	  <input  name="e_nis" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nis.'" size="20" >
+	</div>
+	</div>
+
 	</p>
-	
-	
-	
+<br>
+<br>
 	<p>
-	NAMA GURU : 
-	<br>
-	<input name="e_nama" type="text" value="'.$e_nama.'" size="30" class="btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">NAMA GURU</label>
+	<div class="col-sm-9">
+	  <input  name="e_nama" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nama.'" size="20" >
+	</div>
+	</div>
+
 	</p>
+	<br>
+	<br>
+	
+	
 	
 	
 	<p>
@@ -569,8 +581,8 @@ else if (($s == "baru") OR ($s == "edit"))
 	<input name="kd" type="hidden" value="'.$kdx.'">
 	<input name="page" type="hidden" value="'.$page.'">
 	
-	<input name="btnSMP" type="submit" value="SIMPAN" class="btn btn-danger">
-	<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info">
+<input name="btnBTL" type="submit" value="Batal" class="btn btn-info btn-pill m-w-120">
+<input name="btnSMP" type="submit" value="Simpan" class="btn btn-primary btn-pill m-w-120">
 	</p>
 	
 	
@@ -646,29 +658,38 @@ else
 	
 	
 	
-	echo '<form action="'.$filenya.'" method="post" name="formxx">
-	<p>
-	<input name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-danger">
-	<input name="btnIM" type="submit" value="IMPORT" class="btn btn-primary">
-	<input name="btnEX" type="submit" value="EXPORT" class="btn btn-success">
-	</p>
-	<br>
+	echo '<form action="'.$filenya.'" method="post" name="formxx">';
+	?>
+	<div class="row">
+		<div class="col-md-9">
+		<p>
+			
+	<input name="kunci" type="text" value="<?php echo $kunci2; ?>" size="20" class="btn btn-default" placeholder="Kata Kunci...">
+	<input name="btnCARI" type="submit" value="Cari" class="btn btn-primary btn-sm">
+	<input name="btnBTL" type="submit" value="Reset" class="btn btn-info  btn-sm">
 	
+	</p>	
+		</div>
+	
+	<div class="col-md-3">
 
-	<p>
-	<input name="kunci" type="text" value="'.$kunci2.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">
-	<input name="btnCARI" type="submit" value="CARI" class="btn btn-danger">
-	<input name="btnBTL" type="submit" value="RESET" class="btn btn-info">
-	</p>
+
+	<input name="btnBARU" type="submit" value="Tambah" class="btn btn-primary  btn-sm">
+	<input name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm">
+	<input name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm">
+
 		
+	</div>
+	</div>
 	
+	<?php
+	echo'
 	<div class="table-responsive">          
-	<table class="table" border="1">
+	<table class="table" border="0">
 	<thead>
-	
-	<tr valign="top" bgcolor="'.$warnaheader.'">
-	<td width="20">&nbsp;</td>
-	<td width="20">&nbsp;</td>
+	<tr>
+	<th style="width: 32px"></th>
+	<th style="width: 32px"></th>
 	<td width="50"><strong><font color="'.$warnatext.'">NIP/USERNAME</font></strong></td>
 	<td><strong><font color="'.$warnatext.'">NAMA GURU</font></strong></td>
 	</tr>
@@ -679,16 +700,16 @@ else
 		{
 		do 
 			{
-			if ($warna_set ==0)
-				{
-				$warna = $warna01;
-				$warna_set = 1;
-				}
-			else
-				{
-				$warna = $warna02;
-				$warna_set = 0;
-				}
+				if ($warna_set ==0)
+					{
+					$warna ='FFFFFF';
+					$warna_set = 1;
+					}
+				else
+					{
+					$warna ='FFFFFF';
+					$warna_set = 0;
+					}
 	
 			$nomer = $nomer + 1;
 			$i_kd = nosql($data['kd']);
@@ -700,7 +721,7 @@ else
 			<input type="checkbox" name="item'.$nomer.'" value="'.$i_kd.'">
 	        </td>
 			<td>
-			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'">EDIT</a>
+			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'" type="button" class="btn btn-warning btn-sm"> <i class="zmdi zmdi-edit"></i></a>
 			</td>
 			<td>'.$i_nip.'</td>
 			<td>'.$i_nama.'</td>
@@ -726,9 +747,9 @@ else
 	<input name="kd" type="hidden" value="'.$kdx.'">
 	<input name="page" type="hidden" value="'.$page.'">
 	
-	<input name="btnALL" type="button" value="SEMUA" onClick="checkAll('.$count.')" class="btn btn-primary">
-	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-warning">
-	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger">
+	<input name="btnALL" type="button" value="SEMUA" onClick="checkAll('.$count.')" class="btn btn-default  btn-sm">
+	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-info btn-sm">
+	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger btn-sm">
 	</td>
 	</tr>
 	</table>

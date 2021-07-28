@@ -242,8 +242,8 @@ echo'<table width="100%" border="0" cellspacing="0" cellpadding="3">
 </p>
 
 <p>
-<input name="btnBTL" type="submit" value="Batal" class="btn btn-primary btn-pill m-w-120">
-<input name="btnSMP" type="submit" value="Simpan" class="btn btn-success btn-pill m-w-120">
+<input name="btnBTL" type="submit" value="Batal" class="btn btn-info btn-pill m-w-120">
+<input name="btnSMP" type="submit" value="Simpan" class="btn btn-primary btn-pill m-w-120">
 </p>
 </td>
 </tr>
