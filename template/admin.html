@@ -16,7 +16,7 @@
     <meta property="og:description" content="{judul}" />
     <meta property="og:url" content="{ke}" />
     <meta property="og:site_name" content="{sek_nama}" />
-    <title>Cosmos</title>
+    <title>SMK KROMENGAN - Administrator</title>
     <link rel="icon" type="{sumber}/template/cosmos/image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="{sumber}/template/cosmos/image/png" href="favicon-16x16.png" sizes="16x16">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
@@ -24,15 +24,35 @@
     <link rel="stylesheet" href="{sumber}/template/cosmos/css/cosmos.min.css">
     <link rel="stylesheet" href="{sumber}/template/cosmos/css/application.min.css">
     
+    <!-- ChartJS -->
+    <script src="{sumber}/template/adminlte/bower_components/chart.js/Chart.js"></script>
+    
+    <script>
+      $(function() {
+          // Replace the <textarea id="editor1"> with a CKEditor
+          // instance, using default configuration.
+          CKEDITOR.replace('editor1')
+              //bootstrap WYSIHTML5 - text editor
+          $('.textarea').wysihtml5()
+      })
+  </script>
+  <script>
+      $(document).ready(function() {
+          $('#table-responsive').dataTable({
+              "scrollX": true
+          });
+      });
+  </script>
+    
   </head>
   <body class="layout layout-header-fixed layout-left-sidebar-fixed">
     <div class="site-overlay"></div>
     <div class="site-header">
       <nav class="navbar navbar-default">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index-2.html">
+          <a class="navbar-brand" href="{sumber}/adm/index.php">
             <img src="{sumber}/template/cosmos/img/logo.png" alt="" height="25">
-            <span>cosmos</span>
+            <span>SMK KROMENGAN</span>
           </a>
           <button class="navbar-toggler left-sidebar-toggle pull-left visible-xs" type="button">
             <span class="hamburger"></span>
@@ -50,26 +70,15 @@
             <button class="navbar-toggler left-sidebar-collapse pull-left hidden-xs" type="button">
               <span class="hamburger"></span>
             </button>
-            <button class="navbar-toggler right-sidebar-toggle pull-right hidden-xs" type="button">
-              <i class="zmdi zmdi-long-arrow-left"></i>
-              <div class="dot bg-danger"></div>
-            </button>
             <ul class="nav navbar-nav">
               <li class="visible-xs-block">
                 <div class="nav-avatar">
                   <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/1.jpg" alt="" width="48" height="48">
                 </div>
-                <h4 class="navbar-text text-center">Welcome, Jon Snow!</h4>
+                <h4 class="navbar-text text-center">Welcome, Admin!</h4>
               </li>
             </ul>
-            <form class="navbar-form navbar-left">
-              <div class="navbar-search-group">
-                <input type="text" class="form-control" placeholder="Search">
-                <button type="submit" class="btn btn-default">
-                  <i class="zmdi zmdi-search"></i>
-                </button>
-              </div>
-            </form>
+          
             <ul class="nav navbar-nav navbar-right">
               <li class="nav-table dropdown visible-xs-block">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -79,261 +88,26 @@
                   <span class="hidden-md-up m-l-15">Account</span>
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">Profile</a></li>
-                  <li><a href="#">Settings</a></li>
-                  <li><a href="#">Help</a></li>
                   <li role="separator" class="divider"></li>
-                  <li><a href="#">Logout</a></li>
+                  <li><a href="{sumber}/logout.php">Logout</a></li>
                 </ul>
               </li>
-              <li class="nav-table dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <span class="nav-cell nav-icon">
-                    <i class="zmdi zmdi-apps"></i>
-                  </span>
-                  <span class="hidden-md-up m-l-15">Applications</span>
-                </a>
-                <div class="dropdown-menu dropdown-apps custom-dropdown">
-                  <div class="a-area">
-                    <div class="row gutter-xs">
-                      <div class="col-xs-4">
-                        <div class="a-item">
-                          <a href="#">
-                            <div class="ai-icon">
-                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/dropbox.png" alt="">
-                            </div>
-                            <div class="ai-title">Dropbox</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-xs-4">
-                        <div class="a-item">
-                          <a href="#">
-                            <div class="ai-icon">
-                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/github.png" alt="">
-                            </div>
-                            <div class="ai-title">Github</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-xs-4">
-                        <div class="a-item">
-                          <a href="#">
-                            <div class="ai-icon">
-                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/wordpress.png" alt="">
-                            </div>
-                            <div class="ai-title">Wordpress</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-xs-4">
-                        <div class="a-item">
-                          <a href="#">
-                            <div class="ai-icon">
-                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/gmail.png" alt="">
-                            </div>
-                            <div class="ai-title">Gmail</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-xs-4">
-                        <div class="a-item">
-                          <a href="#">
-                            <div class="ai-icon">
-                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/drive.png" alt="">
-                            </div>
-                            <div class="ai-title">Drive</div>
-                          </a>
-                        </div>
-                      </div>
-                      <div class="col-xs-4">
-                        <div class="a-item">
-                          <a href="#">
-                            <div class="ai-icon">
-                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/dribbble.png" alt="">
-                            </div>
-                            <div class="ai-title">Dribbble</div>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown-footer">
-                    <a href="#">View all apps</a>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-table dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <span class="nav-cell nav-icon">
-                    <i class="zmdi zmdi-notifications-none"></i>
-                  </span>
-                  <span class="hidden-md-up m-l-15">Notifications</span>
-                  <span class="label label-success">3</span>
-                </a>
-                <div class="dropdown-menu custom-dropdown dropdown-notifications dropdown-menu-right">
-                  <div class="dropdown-header">
-                    <span>Notifications</span>
-                    <a href="#" class="text-primary">Mark all as read</a>
-                  </div>
-                  <div class="n-items">
-                    <div class="custom-scrollbar">
-                      <div class="n-item">
-                        <div class="ni-img">
-                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/1.jpg" alt="" width="40" height="40">
-                        </div>
-                        <div class="ni-text"><a href="#">John Doe</a> is now following <a href="#">Kate Morris</a>.</div>
-                        <div class="ni-time">10 min</div>
-                      </div>
-                      <div class="n-item">
-                        <div class="ni-img">
-                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/2.jpg" alt="" width="40" height="40">
-                        </div>
-                        <div class="ni-text"><a href="#">Alexander Olsen</a> liked post <a href="#">Getting Started with SASS</a>.</div>
-                        <div class="ni-time">40 min</div>
-                      </div>
-                      <div class="n-item">
-                        <div class="ni-img">
-                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/3.jpg" alt="" width="40" height="40">
-                        </div>
-                        <div class="ni-text"><a href="#">Linda Davis</a> commented post <a href="#">How to use Bower</a>.</div>
-                        <div class="ni-time">3 hours</div>
-                      </div>
-                      <div class="n-item">
-                        <div class="ni-img">
-                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/4.jpg" alt="" width="40" height="40">
-                        </div>
-                        <div class="ni-text"><a href="#">John Doe</a> is now following <a href="#">Kate Morris</a>.</div>
-                        <div class="ni-time">10 min</div>
-                      </div>
-                      <div class="n-item">
-                        <div class="ni-img">
-                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/5.jpg" alt="" width="40" height="40">
-                        </div>
-                        <div class="ni-text"><a href="#">Alexander Olsen</a> liked post <a href="#">Getting Started with SASS</a>.</div>
-                        <div class="ni-time">40 min</div>
-                      </div>
-                      <div class="n-item">
-                        <div class="ni-img">
-                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/6.jpg" alt="" width="40" height="40">
-                        </div>
-                        <div class="ni-text"><a href="#">Linda Davis</a> commented post <a href="#">How to use Bower</a>.</div>
-                        <div class="ni-time">3 hours</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown-footer">
-                    <a href="#">View all notifications</a>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-table dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                  <span class="nav-cell nav-icon">
-                    <i class="zmdi zmdi-email-open"></i>
-                  </span>
-                  <span class="hidden-md-up m-l-15">Messages</span>
-                  <span class="label label-warning">7</span>
-                </a>
-                <div class="dropdown-menu custom-dropdown dropdown-messages dropdown-menu-right">
-                  <div class="dropdown-header">
-                    <span>Recent messages</span>
-                    <a href="#" class="text-primary">New Message</a>
-                  </div>
-                  <div class="m-items">
-                    <div class="custom-scrollbar">
-                      <div class="m-item">
-                        <a href="#">
-                          <div class="mi-icon bg-warning">
-                            <i class="zmdi zmdi-upload"></i>
-                          </div>
-                          <div class="mi-time">10 min</div>
-                          <div class="mi-title">Upload status</div>
-                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </a>
-                      </div>
-                      <div class="m-item">
-                        <a href="#">
-                          <div class="mi-icon bg-success">
-                            <i class="zmdi zmdi-money"></i>
-                          </div>
-                          <div class="mi-time">40 min</div>
-                          <div class="mi-title">Income</div>
-                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </a>
-                      </div>
-                      <div class="m-item">
-                        <a href="#">
-                          <div class="mi-icon bg-primary">
-                            <i class="zmdi zmdi-alert-triangle"></i>
-                          </div>
-                          <div class="mi-time">3 hours</div>
-                          <div class="mi-title">New task</div>
-                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </a>
-                      </div>
-                      <div class="m-item">
-                        <a href="#">
-                          <div class="mi-icon bg-warning">
-                            <i class="zmdi zmdi-upload"></i>
-                          </div>
-                          <div class="mi-time">10 min</div>
-                          <div class="mi-title">Upload status</div>
-                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </a>
-                      </div>
-                      <div class="m-item">
-                        <a href="#">
-                          <div class="mi-icon bg-success">
-                            <i class="zmdi zmdi-money"></i>
-                          </div>
-                          <div class="mi-time">40 min</div>
-                          <div class="mi-title">Income</div>
-                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </a>
-                      </div>
-                      <div class="m-item">
-                        <a href="#">
-                          <div class="mi-icon bg-primary">
-                            <i class="zmdi zmdi-alert-triangle"></i>
-                          </div>
-                          <div class="mi-time">3 hours</div>
-                          <div class="mi-title">New task</div>
-                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="dropdown-footer">
-                    <a href="#">View all messages</a>
-                  </div>
-                </div>
-              </li>
+              
+              
+              
               <li class="nav-table dropdown hidden-sm-down">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                   <span class="nav-cell p-r-10">
                     <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/1.jpg" alt="" width="32" height="32">
                   </span>
-                  <span class="nav-cell">Jon Snow
+                  <span class="nav-cell">Admin
                     <span class="caret"></span>
                   </span>
                 </a>
                 <ul class="dropdown-menu">
+                  <!-- <li role="separator" class="divider"></li> -->
                   <li>
-                    <a href="#">
-                      <i class="zmdi zmdi-account-o m-r-10"></i> Profile</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="zmdi zmdi-settings m-r-10"></i> Settings</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <i class="zmdi zmdi-help-outline m-r-10"></i> Help</a>
-                  </li>
-                  <li role="separator" class="divider"></li>
-                  <li>
-                    <a href="#">
+                    <a href="{sumber}/logout.php">
                       <i class="zmdi zmdi-power m-r-10"></i> Logout</a>
                   </li>
                 </ul>
@@ -446,20 +220,45 @@
       <div class="site-content">
         <div class="panel panel-default panel-table">
           <div class="panel-heading">
-            <h3 class="m-t-0 m-b-5">{judul}</h3>
+            <div class="row">
+              <div class="col-md-8">
+                <div class="panel-heading">
+                  <h3 class="m-t-0 m-b-5">{judul}</h3>
+                  
+                </div>
+              </div>
+              <div class="col-md-4">    
+                <!-- <ol class="breadcrumb"> -->
+                <ol class="breadcrumb">
+                    <li><a href="{sumber}/adm/index.php"><i class="fa fa-dashboard"></i> BERANDA</a></li>
+                    <li class="active">{judul}</li>
+                 </ol>
+              </div>
+            </div>
           </div>
-             <!-- Main content -->
-             <section class="content">
-              <ol class="breadcrumb">
-                  <li><a href="{sumber}/adm/index.php"><i class="fa fa-dashboard"></i> BERANDA</a></li>
-                  <li class="active">{judul}</li>
-              </ol>
+          
+            <!-- Main content -->
+            <section class="content">
+              <br>
+          
               <form action="{filenya}" enctype="multipart/form-data" method="post" name="formx">
                   {isi}
               </form>
           </section>
           <!-- /.content -->
+         
+        </div>
+       
+       
+
+
+
+      
+     
+
+     
       </div>
+
       <div class="site-footer">
         <strong>&copy; 2020 - SMK DW KROMENGAN 
       </div>
@@ -467,6 +266,8 @@
     <script src="{sumber}/template/cosmos/js/vendor.min.js"></script>
     <script src="{sumber}/template/cosmos/js/cosmos.min.js"></script>
     <script src="{sumber}/template/cosmos/js/application.min.js"></script>
+    <script src="{sumber}/template/cosmos/js/dashboard-2.min.js"></script>    
+    <script src="{sumber}/template/cosmos/js/charts-chartjs.min.js"></script>
   </body>
 
 <!-- Mirrored from big-bang-studio.com/cosmos/pages-blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 12:55:36 GMT -->

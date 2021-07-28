@@ -31,7 +31,7 @@ nocache;
 
 //nilai
 $filenya = "index.php";
-$judul = "Selamat Datang....";
+$judul = "Beranda";
 $judulku = "$judul  [$adm_session]";
 
 
@@ -241,40 +241,58 @@ ob_start();
 
               
                   <!-- Info boxes -->
-      <div class="row">
-
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-red"><i class="glyphicon glyphicon-user"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">SISWA</span>
-              <span class="info-box-number"><?php echo $jml_siswa;?></span>
+                  
+        <div class="row col-md-offset-1">
+          <div class="col-md-3 col-sm-6">
+          <div class="widget widget-tile-2 bg-primary m-b-30">
+              <div class="wt-content p-a-20 p-b-50">
+                <div class="wt-title">Siswa
+                  <span class="t-caret text-success">
+                    <i class="zmdi zmdi-caret-up"></i>
+                  </span>
+                </div>
+                <div class="wt-number"><?php echo $jml_siswa;?></div>
+                <div class="wt-text">Updated today at 14:57</div>
+              </div>
+              <div class="wt-icon">
+                <i class="zmdi zmdi-accounts"></i>
+              </div>
+              <div class="wt-chart">
+                <span id="peity-chart-1">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,2,1</span>
+              </div>
             </div>
-            <!-- /.info-box-content -->
           </div>
-          <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-
-
-
-
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-xs-12">
-          <div class="info-box">
-            <span class="info-box-icon bg-blue"><i class="glyphicon glyphicon-file"></i></span>
-
-            <div class="info-box-content">
-              <span class="info-box-text">KELAS</span>
-              <span class="info-box-number"><?php echo $jml_kelas;?></span>
-            </div>
-            <!-- /.info-box-content -->
+          <div class="col-md-3 col-sm-6">
+          <div class="widget widget-tile-2 bg-warning m-b-30">
+              <div class="wt-content p-a-20 p-b-50">
+                <div class="wt-title">Kelas</div>
+                <div class="wt-number"><?php echo $jml_kelas;?></div>
+                <div class="wt-text">Updated at 2020</div>
+              </div>
+              <div class="wt-icon">
+                <i class="zmdi zmdi-shopping-basket"></i>
+              </div>
+              <div class="wt-chart">
+                <span id="peity-chart-2">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,5,9</span>
+              </div>
           </div>
-          <!-- /.info-box -->
+          
         </div>
-        <!-- /.col -->
+
+      <div class="row">  
+        <!-- <div class="row">
+              <div class="col-md-12 m-b-30">
+                <h4 class="m-t-0 m-b-30">Line chart</h4>
+                <canvas id="line" style="height: 300px"></canvas>
+              </div>
+              <div class="col-md-12 m-b-30">
+                <h4 class="m-t-0 m-b-30">Bar chart</h4>
+                <canvas id="bar" style="height: 300px"></canvas>
+              </div>
+
+            </div> -->
+         
+      
 
 
 
@@ -292,19 +310,13 @@ ob_start();
       </div>
       <!-- /.row -->
 
-      <div class="row">
+      <!-- <div class="row">    
         <div class="col-md-12">
-
-
-
-
-		
-
-    	<div class="box">
+          	<div class="box">
             <div class="box-header with-border">
               <h3 class="box-title">VISITOR SEMINGGU INI...</h3>
             </div>
-            <!-- /.box-header -->
+          
             <div class="box-body">
               <div class="row">
                 <div class="col-md-12">
@@ -322,7 +334,7 @@ ob_start();
                 </div>
                </div>
                </div>
-              </div>
+              </div> -->
 
 
                 
