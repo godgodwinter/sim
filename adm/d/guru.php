@@ -553,7 +553,7 @@ else if (($s == "baru") OR ($s == "edit"))
 	<div class="form-group">
 	<label class="col-sm-3 control-label" for="form-control-3">NIP</label>
 	<div class="col-sm-9">
-	  <input  name="e_nis" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nis.'" size="20" >
+	  <input  name="e_nis" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nis.'" >
 	</div>
 	</div>
 
@@ -564,7 +564,7 @@ else if (($s == "baru") OR ($s == "edit"))
 	<div class="form-group">
 	<label class="col-sm-3 control-label" for="form-control-3">NAMA GURU</label>
 	<div class="col-sm-9">
-	  <input  name="e_nama" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nama.'" size="20" >
+	  <input  name="e_nama" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nama.'"  >
 	</div>
 	</div>
 

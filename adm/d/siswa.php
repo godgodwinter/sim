@@ -749,12 +749,12 @@ if ($s == "import")
 	<?php
 	echo '<form action="'.$filenya.'" method="post" enctype="multipart/form-data" name="formxx2">
 	<p>
-		<input name="filex_xls" type="file" size="30" class="btn btn-warning">
+		<input name="filex_xls" type="file" size="30" class="btn btn-default">
 	</p>
 
 	<p>
-		<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info">
-		<input name="btnIMX" type="submit" value="IMPORT >>" class="btn btn-danger">
+	<input name="btnBTL" type="submit" value="Batal" class="btn btn-info btn-pill m-w-120">
+	<input name="btnIMX" type="submit" value="Import" class="btn btn-primary btn-pill m-w-120">
 	</p>
 	
 	
@@ -803,26 +803,36 @@ else if (($s == "baru") OR ($s == "edit"))
 	echo '<form action="'.$filenya.'" method="post" name="formx2">
 	
 	
-	
 	<p>
-	NIS : 
-	<br>
-	<input name="e_nis" type="text" value="'.$e_nis.'" size="10" class="btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">NIS</label>
+	<div class="col-sm-9">
+	  <input  name="e_nis" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nis.'"  >
+	</div>
+	</div>
+
 	</p>
-	
-	
+	<br>
+	<br>
 	
 	<p>
-	NAMA SISWA : 
-	<br>
-	<input name="e_nama" type="text" value="'.$e_nama.'" size="30" class="btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">NAMA SISWA</label>
+	<div class="col-sm-9">
+	  <input  name="e_nama" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nama.'"  >
+	</div>
+	</div>
+
 	</p>
-	
+	<br>
+	<br>
 	
 	<p>
-	TAHUN PELAJARAN : 
-	<br>
-	<select name="e_tapel" class="btn btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">Tahun Pelajaran</label>
+	<div class="col-sm-9">
+	  
+	<select name="e_tapel" class="btn btn-default form-control" >
 	<option value="'.$e_tapel.'" selected>--'.$e_tapel.'--</option>';
 	
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_tapel ".
@@ -839,14 +849,20 @@ else if (($s == "baru") OR ($s == "edit"))
 	while ($rowst = mysqli_fetch_assoc($qst));
 	
 	echo '</select>
+	</div>
+	</div>
+
 	</p>
+	<br>
+	<br>
 	
-		
 	
 	<p>
-	KELAS : 
-	<br>
-	<select name="e_kelas" class="btn btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">Kelas</label>
+	<div class="col-sm-9">
+	  
+	<select name="e_kelas" class="btn btn-default form-control" >
 	<option value="'.$e_kelas.'" selected>--'.$e_kelas.'--</option>';
 	
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_kelas ".
@@ -863,24 +879,47 @@ else if (($s == "baru") OR ($s == "edit"))
 	while ($rowst = mysqli_fetch_assoc($qst));
 	
 	echo '</select>
+	</div>
+	</div>
+
 	</p>
+	<br>
+	<br>
+	
+	
 	<p>
-	USER UJIAN : 
-	<br>
-	<input name="e_moodle_user" type="text" value="'.$e_moodle_user.'" size="20" class="btn-warning">
-	</p>	<p>
-	PASSWORD UJIAN : 
-	<br>
-	<input name="e_moodle_pass" type="text" value="'.$e_moodle_pass.'" size="20" class="btn-warning">
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">USER UJIAN</label>
+	<div class="col-sm-9">
+	  <input  name="e_moodle_user" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_moodle_user.'" >
+	</div>
+	</div>
+
 	</p>
+	<br>
+	<br>
+
+	
+	<p>
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">PASSWORD UJIAN</label>
+	<div class="col-sm-9">
+	  <input  name="e_moodle_pass" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_moodle_pass.'" >
+	</div>
+	</div>
+
+	</p>
+	<br>
+	<br>
+	
 	<p>
 	<input name="jml" type="hidden" value="'.$count.'">
 	<input name="s" type="hidden" value="'.$s.'">
 	<input name="kd" type="hidden" value="'.$kdx.'">
 	<input name="page" type="hidden" value="'.$page.'">
 	
-	<input name="btnSMP" type="submit" value="SIMPAN" class="btn btn-danger">
-	<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info">
+<input name="btnBTL" type="submit" value="Batal" class="btn btn-info btn-pill m-w-120">
+<input name="btnSMP" type="submit" value="Simpan" class="btn btn-primary btn-pill m-w-120">
 	</p>
 	
 	
@@ -962,30 +1001,39 @@ else
 	
 	
 	
-	echo '<form action="'.$filenya.'" method="post" name="formxx">
-	<p>
-	<input name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-danger">
-	<input name="btnIM" type="submit" value="IMPORT" class="btn btn-primary">
-	<input name="btnEX" type="submit" value="EXPORT" class="btn btn-success">
-	</p>
-	<br>
+	echo '<form action="'.$filenya.'" method="post" name="formxx">';
+	?>
+
+	<div class="row">
+		<div class="col-md-9">
+		<p>
+			
+	<input name="kunci" type="text" value="<?php echo $kunci2; ?>" size="20" class="btn btn-default" placeholder="Kata Kunci...">
+	<input name="btnCARI" type="submit" value="Cari" class="btn btn-primary btn-sm">
+	<input name="btnBTL" type="submit" value="Reset" class="btn btn-info  btn-sm">
 	
+	</p>	
+		</div>
+	
+	<div class="col-md-3">
 
 
-	<p>
-	<input name="kunci" type="text" value="'.$kunci2.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">
-	<input name="btnCARI" type="submit" value="CARI" class="btn btn-danger">
-	<input name="btnBTL" type="submit" value="RESET" class="btn btn-info">
-	</p>
+	<input name="btnBARU" type="submit" value="Tambah" class="btn btn-primary  btn-sm">
+	<input name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm">
+	<input name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm">
+
 		
+	</div>
+	</div>
 	
+	<?php
+	echo'
 	<div class="table-responsive">          
-	<table class="table" border="1">
+	<table class="table" border="0">
 	<thead>
-	
-	<tr valign="top" bgcolor="'.$warnaheader.'">
-	<td width="20">&nbsp;</td>
-	<td width="20">&nbsp;</td>
+	<tr>
+	<th style="width: 32px"></th>
+	<th style="width: 32px"></th>
 	<td width="200"><strong><font color="'.$warnatext.'">TAHUN PELAJARAN</font></strong></td>
 	<td width="100"><strong><font color="'.$warnatext.'">KELAS</font></strong></td>
 	<td width="150"><strong><font color="'.$warnatext.'">NIS/USERNAME</font></strong></td>
@@ -1049,9 +1097,9 @@ else
 	<input name="kd" type="hidden" value="'.$kdx.'">
 	<input name="page" type="hidden" value="'.$page.'">
 	
-	<input name="btnALL" type="button" value="SEMUA" onClick="checkAll('.$count.')" class="btn btn-primary">
-	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-warning">
-	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger">
+	<input name="btnALL" type="button" value="SEMUA" onClick="checkAll('.$count.')" class="btn btn-default  btn-sm">
+	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-info btn-sm">
+	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger btn-sm">
 	</td>
 	</tr>
 	</table>
