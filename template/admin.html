@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+  
+<!-- Mirrored from big-bang-studio.com/cosmos/pages-blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 12:55:36 GMT -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{judulku}</title>
-    <!-- Tell the browser to be responsive to screen width -->
+    
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="author" content="{x_author}">
     <meta name="description" content="{x_description}">
@@ -16,237 +16,458 @@
     <meta property="og:description" content="{judul}" />
     <meta property="og:url" content="{ke}" />
     <meta property="og:site_name" content="{sek_nama}" />
-    <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{sumber}/template/adminlte/bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{sumber}/template/adminlte/bower_components/font-awesome/css/font-awesome.min.css">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{sumber}/template/adminlte/dist/css/AdminLTE.css">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="{sumber}/template/adminlte/dist/css/skins/skins-biasawae.css">
-    <!-- jQuery 3 -->
-    <script src="{sumber}/template/adminlte/bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap 3.3.7 -->
-    <script src="{sumber}/template/adminlte/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- AdminLTE App -->
-    <script src="{sumber}/template/adminlte/dist/js/adminlte.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script src="{sumber}/template/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-    <!-- Bootstrap core CSS -->
-    <link href="{sumber}/template/vendor/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
-    <!-- ChartJS -->
-    <script src="{sumber}/template/adminlte/bower_components/chart.js/Chart.js"></script>
-    <!-- CK Editor -->
-    <script src="{sumber}/template/adminlte/bower_components/ckeditor/ckeditor.js"></script>
-    <script>
-        $(function() {
-            // Replace the <textarea id="editor1"> with a CKEditor
-            // instance, using default configuration.
-            CKEDITOR.replace('editor1')
-                //bootstrap WYSIHTML5 - text editor
-            $('.textarea').wysihtml5()
-        })
-    </script>
-    <script>
-        $(document).ready(function() {
-            $('#table-responsive').dataTable({
-                "scrollX": true
-            });
-        });
-    </script>
-</head>
-
-<body class="hold-transition skin-blue sidebar-collapse sidebar-mini" onload="{diload}">
-    <div class="wrapper">
-        <header class="main-header" style="position: fixed; width: 100%">
-            <!-- Logo -->
-            <a href="{sumber}/adm/index.php" class="logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>A</b></span>
-                <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Admin</b></span>
-            </a>
-            <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top">
-                <!-- Sidebar toggle button-->
-                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-                    <span class="sr-only">Toggle navigation</span>
-                </a>
-                <div class="navbar-custom-menu">
-                    <ul class="nav navbar-nav">
-                        <!-- Control Sidebar Toggle Button -->
-                        <li>
-                            <a href="{sumber}/logout.php" alt="KELUAR"><i class="fa fa-gears"></i>KELUAR</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- Left side column. contains the logo and sidebar -->
-        <aside class="main-sidebar">
-            <!-- sidebar: style can be found in sidebar.less -->
-            <section class="sidebar">
-                <!-- /.search form -->
-                <!-- sidebar menu: : style can be found in sidebar.less -->
-                <ul class="sidebar-menu" data-widget="tree">
-
-                    <li>
-                        <a href="{sumber}/adm/index.php">
-                            <i class="fa fa-home"></i> <span>BERANDA</span>
-                            <span class="pull-right-container">
-                          
-                        </span>
-                        </a>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-gears"></i>
-                            <span>SETTING</span>
-                            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <li>
-                                <a href="{sumber}/adm/s/pass.php" title="Ganti Password"><i class="fa fa-circle-o"></i> Ganti
-                  Password</a>
-                            </li>
-                            <LI>
-                                <a href="{sumber}/adm/s/reset_pass.php" title="Reset Password"><i class="fa fa-circle-o"></i> Reset
-                  Password</a>
-                            </LI>
-                        </ul>
-                    </li>
-                    <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-database"></i>
-                            <span>MASTER</span>
-                            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <LI>
-                                <a href="{sumber}/adm/d/dtapel.php" title="Data Tahun Pelajaran"><i class="fa fa-circle-o"></i> Tahun
-                  Pelajaran</a>
-                            </LI>
-                            <LI>
-                                <a href="{sumber}/adm/d/kelas.php" title="Data Kelas"><i class="fa fa-circle-o"></i> Kelas</a>
-                            </LI>
-                            <LI>
-                                <a href="{sumber}/adm/d/siswa.php" title="Data Siswa"><i class="fa fa-circle-o"></i> Siswa</a>
-                            </LI>
-                            <LI>
-                                <a href="{sumber}/adm/d/guru.php" title="Data Siswa"><i class="fa fa-circle-o"></i> Guru</a>
-                            </LI>
-                            <!-- <LI>
-                                <a href="{sumber}/adm/d/guru.php" title="Data Guru"><i class="fa fa-circle-o"></i> Guru</a>
-                            </LI> -->
-                            <!-- <LI>
-                                <a href="{sumber}/adm/d/mapel.php" title="Data Mata Pelajaran"><i class="fa fa-circle-o"></i> Mata
-                  Pelajaran</a>
-                            </LI>
-                            <LI>
-                                <a href="{sumber}/adm/e/mapel.php" title="Guru Mengajar"><i class="fa fa-circle-o"></i> Guru
-                  Mengajar</a>
-                            </LI> -->
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="{sumber}/adm/d/tagihan_atur.php">
-                            <i class="fa fa-th"></i> <span>Atur Tagihan</span>
-                            <span class="pull-right-container">
-                        
-                      </span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{sumber}/adm/d/tagihan_siswa.php">
-                            <i class="fa fa-user"></i> <span>Tagihan Siswa</span>
-                            <span class="pull-right-container">
-                        
-                      </span>
-                        </a>
-                    </li>
-                    <!-- <li>
-                        <a href="{sumber}/adm/d/tagihan.php">
-                            <i class="fa fa-th"></i> <span>Tagihan Siswa</span>
-                            <span class="pull-right-container">
-                      
-                    </span>
-                        </a>
-                    </li> -->
-                    <!-- <li class="treeview">
-                        <a href="#">
-                            <i class="fa fa-database"></i>
-                            <span>LOG</span>
-                            <span class="pull-right-container">
-                <i class="fa fa-angle-left pull-right"></i>
-              </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <LI>
-                                <a href="{sumber}/adm/logg/mapel.php" title="Aktivitas"><i class="fa fa-circle-o"></i> Aktivitas</a>
-                            </LI>
-                            <LI>
-                                <a href="{sumber}/adm/logg/guru.php" title="Kehadiran Guru"><i class="fa fa-circle-o"></i> Kehadiran
-                  Guru</a>
-                            </LI>
-                            <LI>
-                                <a href="{sumber}/adm/logg/siswa.php" title="Kehadiran Siswa"><i class="fa fa-circle-o"></i> Kehadiran
-                  Siswa</a>
-                            </LI>
-                        </ul>
-                    </li> -->
-                    <li>
-                        <a href="{sumber}/logout.php" title="LogOut">
-                            <i class="fa fa-sign-out"></i> <span>LOGOUT</span>
-                            <span class="pull-right-container">
-                        
-                      </span>
-                        </a>
-                    </li>
-
-                </ul>
-            </section>
-            <!-- /.sidebar -->
-        </aside>
-        <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h1>
-                    {judul}
-                </h1>
-            </section>
-            <!-- Main content -->
-            <section class="content">
-                <ol class="breadcrumb">
-                    <li><a href="{sumber}/adm/index.php"><i class="fa fa-dashboard"></i> BERANDA</a></li>
-                    <li class="active">{judul}</li>
-                </ol>
-                <form action="{filenya}" enctype="multipart/form-data" method="post" name="formx">
-                    {isi}
-                </form>
-            </section>
-            <!-- /.content -->
+    <title>Cosmos</title>
+    <link rel="icon" type="{sumber}/template/cosmos/image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="{sumber}/template/cosmos/image/png" href="favicon-16x16.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="{sumber}/template/cosmos/css/vendor.min.css">
+    <link rel="stylesheet" href="{sumber}/template/cosmos/css/cosmos.min.css">
+    <link rel="stylesheet" href="{sumber}/template/cosmos/css/application.min.css">
+    
+  </head>
+  <body class="layout layout-header-fixed layout-left-sidebar-fixed">
+    <div class="site-overlay"></div>
+    <div class="site-header">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index-2.html">
+            <img src="{sumber}/template/cosmos/img/logo.png" alt="" height="25">
+            <span>cosmos</span>
+          </a>
+          <button class="navbar-toggler left-sidebar-toggle pull-left visible-xs" type="button">
+            <span class="hamburger"></span>
+          </button>
+          <button class="navbar-toggler right-sidebar-toggle pull-right visible-xs-block" type="button">
+            <i class="zmdi zmdi-long-arrow-left"></i>
+            <div class="dot bg-danger"></div>
+          </button>
+          <button class="navbar-toggler pull-right visible-xs-block" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="more"></span>
+          </button>
         </div>
-        <!-- /.content-wrapper -->
-        <footer class="main-footer">
-            <strong>&copy; 2020 {versi}
-    </footer>
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
-    <div class="control-sidebar-bg"></div>
-  </div>
-  <!-- ./wrapper -->
-</body>
+        <div class="navbar-collapsible">
+          <div id="navbar" class="navbar-collapse collapse">
+            <button class="navbar-toggler left-sidebar-collapse pull-left hidden-xs" type="button">
+              <span class="hamburger"></span>
+            </button>
+            <button class="navbar-toggler right-sidebar-toggle pull-right hidden-xs" type="button">
+              <i class="zmdi zmdi-long-arrow-left"></i>
+              <div class="dot bg-danger"></div>
+            </button>
+            <ul class="nav navbar-nav">
+              <li class="visible-xs-block">
+                <div class="nav-avatar">
+                  <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/1.jpg" alt="" width="48" height="48">
+                </div>
+                <h4 class="navbar-text text-center">Welcome, Jon Snow!</h4>
+              </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+              <div class="navbar-search-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit" class="btn btn-default">
+                  <i class="zmdi zmdi-search"></i>
+                </button>
+              </div>
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-table dropdown visible-xs-block">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-cell nav-icon">
+                    <i class="zmdi zmdi-account-o"></i>
+                  </span>
+                  <span class="hidden-md-up m-l-15">Account</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Profile</a></li>
+                  <li><a href="#">Settings</a></li>
+                  <li><a href="#">Help</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="#">Logout</a></li>
+                </ul>
+              </li>
+              <li class="nav-table dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-cell nav-icon">
+                    <i class="zmdi zmdi-apps"></i>
+                  </span>
+                  <span class="hidden-md-up m-l-15">Applications</span>
+                </a>
+                <div class="dropdown-menu dropdown-apps custom-dropdown">
+                  <div class="a-area">
+                    <div class="row gutter-xs">
+                      <div class="col-xs-4">
+                        <div class="a-item">
+                          <a href="#">
+                            <div class="ai-icon">
+                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/dropbox.png" alt="">
+                            </div>
+                            <div class="ai-title">Dropbox</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="a-item">
+                          <a href="#">
+                            <div class="ai-icon">
+                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/github.png" alt="">
+                            </div>
+                            <div class="ai-title">Github</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="a-item">
+                          <a href="#">
+                            <div class="ai-icon">
+                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/wordpress.png" alt="">
+                            </div>
+                            <div class="ai-title">Wordpress</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="a-item">
+                          <a href="#">
+                            <div class="ai-icon">
+                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/gmail.png" alt="">
+                            </div>
+                            <div class="ai-title">Gmail</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="a-item">
+                          <a href="#">
+                            <div class="ai-icon">
+                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/drive.png" alt="">
+                            </div>
+                            <div class="ai-title">Drive</div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-xs-4">
+                        <div class="a-item">
+                          <a href="#">
+                            <div class="ai-icon">
+                              <img class="img-responsive" src="{sumber}/template/cosmos/img/brands/dribbble.png" alt="">
+                            </div>
+                            <div class="ai-title">Dribbble</div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#">View all apps</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-table dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-cell nav-icon">
+                    <i class="zmdi zmdi-notifications-none"></i>
+                  </span>
+                  <span class="hidden-md-up m-l-15">Notifications</span>
+                  <span class="label label-success">3</span>
+                </a>
+                <div class="dropdown-menu custom-dropdown dropdown-notifications dropdown-menu-right">
+                  <div class="dropdown-header">
+                    <span>Notifications</span>
+                    <a href="#" class="text-primary">Mark all as read</a>
+                  </div>
+                  <div class="n-items">
+                    <div class="custom-scrollbar">
+                      <div class="n-item">
+                        <div class="ni-img">
+                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/1.jpg" alt="" width="40" height="40">
+                        </div>
+                        <div class="ni-text"><a href="#">John Doe</a> is now following <a href="#">Kate Morris</a>.</div>
+                        <div class="ni-time">10 min</div>
+                      </div>
+                      <div class="n-item">
+                        <div class="ni-img">
+                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/2.jpg" alt="" width="40" height="40">
+                        </div>
+                        <div class="ni-text"><a href="#">Alexander Olsen</a> liked post <a href="#">Getting Started with SASS</a>.</div>
+                        <div class="ni-time">40 min</div>
+                      </div>
+                      <div class="n-item">
+                        <div class="ni-img">
+                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/3.jpg" alt="" width="40" height="40">
+                        </div>
+                        <div class="ni-text"><a href="#">Linda Davis</a> commented post <a href="#">How to use Bower</a>.</div>
+                        <div class="ni-time">3 hours</div>
+                      </div>
+                      <div class="n-item">
+                        <div class="ni-img">
+                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/4.jpg" alt="" width="40" height="40">
+                        </div>
+                        <div class="ni-text"><a href="#">John Doe</a> is now following <a href="#">Kate Morris</a>.</div>
+                        <div class="ni-time">10 min</div>
+                      </div>
+                      <div class="n-item">
+                        <div class="ni-img">
+                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/5.jpg" alt="" width="40" height="40">
+                        </div>
+                        <div class="ni-text"><a href="#">Alexander Olsen</a> liked post <a href="#">Getting Started with SASS</a>.</div>
+                        <div class="ni-time">40 min</div>
+                      </div>
+                      <div class="n-item">
+                        <div class="ni-img">
+                          <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/6.jpg" alt="" width="40" height="40">
+                        </div>
+                        <div class="ni-text"><a href="#">Linda Davis</a> commented post <a href="#">How to use Bower</a>.</div>
+                        <div class="ni-time">3 hours</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#">View all notifications</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-table dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-cell nav-icon">
+                    <i class="zmdi zmdi-email-open"></i>
+                  </span>
+                  <span class="hidden-md-up m-l-15">Messages</span>
+                  <span class="label label-warning">7</span>
+                </a>
+                <div class="dropdown-menu custom-dropdown dropdown-messages dropdown-menu-right">
+                  <div class="dropdown-header">
+                    <span>Recent messages</span>
+                    <a href="#" class="text-primary">New Message</a>
+                  </div>
+                  <div class="m-items">
+                    <div class="custom-scrollbar">
+                      <div class="m-item">
+                        <a href="#">
+                          <div class="mi-icon bg-warning">
+                            <i class="zmdi zmdi-upload"></i>
+                          </div>
+                          <div class="mi-time">10 min</div>
+                          <div class="mi-title">Upload status</div>
+                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </a>
+                      </div>
+                      <div class="m-item">
+                        <a href="#">
+                          <div class="mi-icon bg-success">
+                            <i class="zmdi zmdi-money"></i>
+                          </div>
+                          <div class="mi-time">40 min</div>
+                          <div class="mi-title">Income</div>
+                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </a>
+                      </div>
+                      <div class="m-item">
+                        <a href="#">
+                          <div class="mi-icon bg-primary">
+                            <i class="zmdi zmdi-alert-triangle"></i>
+                          </div>
+                          <div class="mi-time">3 hours</div>
+                          <div class="mi-title">New task</div>
+                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </a>
+                      </div>
+                      <div class="m-item">
+                        <a href="#">
+                          <div class="mi-icon bg-warning">
+                            <i class="zmdi zmdi-upload"></i>
+                          </div>
+                          <div class="mi-time">10 min</div>
+                          <div class="mi-title">Upload status</div>
+                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </a>
+                      </div>
+                      <div class="m-item">
+                        <a href="#">
+                          <div class="mi-icon bg-success">
+                            <i class="zmdi zmdi-money"></i>
+                          </div>
+                          <div class="mi-time">40 min</div>
+                          <div class="mi-title">Income</div>
+                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </a>
+                      </div>
+                      <div class="m-item">
+                        <a href="#">
+                          <div class="mi-icon bg-primary">
+                            <i class="zmdi zmdi-alert-triangle"></i>
+                          </div>
+                          <div class="mi-time">3 hours</div>
+                          <div class="mi-title">New task</div>
+                          <div class="mi-text text-truncate">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="dropdown-footer">
+                    <a href="#">View all messages</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-table dropdown hidden-sm-down">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <span class="nav-cell p-r-10">
+                    <img class="img-circle" src="{sumber}/template/cosmos/img/avatars/1.jpg" alt="" width="32" height="32">
+                  </span>
+                  <span class="nav-cell">Jon Snow
+                    <span class="caret"></span>
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#">
+                      <i class="zmdi zmdi-account-o m-r-10"></i> Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="zmdi zmdi-settings m-r-10"></i> Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="zmdi zmdi-help-outline m-r-10"></i> Help</a>
+                  </li>
+                  <li role="separator" class="divider"></li>
+                  <li>
+                    <a href="#">
+                      <i class="zmdi zmdi-power m-r-10"></i> Logout</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="site-main">
+      <div class="site-left-sidebar">
+        <div class="sidebar-backdrop"></div>
+        <div class="custom-scrollbar">
+          <ul class="sidebar-menu">
+            <li class="menu-title">MENU DASAR</li>
+            
+            <li>
+              <a href="{sumber}/adm/index.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-home"></i>
+                </span>
+                <span class="menu-text">Beranda</span>
+              </a>
+            </li>
+            <li class="with-sub">
+              <a href="#" aria-haspopup="true">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-settings"></i>
+                </span>
+                <span class="menu-text">Pengaturan</span>
+              </a>
+              <ul class="sidebar-submenu collapse">
+                <li class="menu-subtitle">Pengaturan</li>
+                <li><a href="{sumber}/adm/s/pass.php">Ganti Password</a></li>
+                <li><a href="{sumber}/adm/s/reset_pass.php">Reset Password</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="{sumber}/logout.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-long-arrow-right"></i>
+                </span>
+                <span class="menu-text">Logout</span>
+              </a>
+            </li>
+            
+            <li class="menu-title">MASTERING DATA</li>
+            
+            <li>
+              <a href="{sumber}/adm/d/dtapel.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-label-heart"></i>
+                </span>
+                <span class="menu-text">Tahun Pelajaran</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="{sumber}/adm/d/kelas.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-movie"></i>
+                </span>
+                <span class="menu-text">Kelas</span>
+              </a>
+            </li>
+            <li>
+              <a href="{sumber}/adm/d/guru.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-male"></i>
+                </span>
+                <span class="menu-text">Guru</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="{sumber}/adm/d/siswa.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-account"></i>
+                </span>
+                <span class="menu-text">Siswa</span>
+              </a>
+            </li>
+            
+            <li class="menu-title">MENU TAGIHAN</li>
+            
+            <li>
+              <a href="{sumber}/adm/d/tagihan_atur.php"">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-tag"></i>
+                </span>
+                <span class="menu-text">Atur Tagihan</span>
+              </a>
+            </li>
 
+            <li>
+              <a href="{sumber}/adm/d/tagihan_siswa.php">
+                <span class="menu-icon">
+                  <i class="zmdi zmdi-tag-more"></i>
+                </span>
+                <span class="menu-text">Tagihan Siswa</span>
+              </a>
+            </li>
+
+            
+            
+          </ul>
+        </div>
+      </div>
+     
+      <div class="site-content">
+        <div class="panel panel-default panel-table">
+          <div class="panel-heading">
+            <h3 class="m-t-0 m-b-5">{judul}</h3>
+          </div>
+             <!-- Main content -->
+             <section class="content">
+              <ol class="breadcrumb">
+                  <li><a href="{sumber}/adm/index.php"><i class="fa fa-dashboard"></i> BERANDA</a></li>
+                  <li class="active">{judul}</li>
+              </ol>
+              <form action="{filenya}" enctype="multipart/form-data" method="post" name="formx">
+                  {isi}
+              </form>
+          </section>
+          <!-- /.content -->
+      </div>
+      <div class="site-footer">
+        <strong>&copy; 2020 - SMK DW KROMENGAN 
+      </div>
+    </div>
+    <script src="{sumber}/template/cosmos/js/vendor.min.js"></script>
+    <script src="{sumber}/template/cosmos/js/cosmos.min.js"></script>
+    <script src="{sumber}/template/cosmos/js/application.min.js"></script>
+  </body>
+
+<!-- Mirrored from big-bang-studio.com/cosmos/pages-blank.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 10 Jan 2019 12:55:36 GMT -->
 </html>
