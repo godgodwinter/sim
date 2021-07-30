@@ -549,15 +549,20 @@ $sqlcaripersen = mysqli_query($koneksi, "SELECT * FROM admin_setting");
 foreach($sqlcaripersen as $datapersen){
 	$y_persen=$datapersen['persen']; 
 }
-    echo '<form action="'.$filenya.'" method="post" name="formxx">
-	
-<p>Persentase Minimal : 
-<input name="persen" type="number" value="'.$y_persen.'" size="20" class="btn btn-warning">
-
-<input name="btnSMPpersen" type="submit" value="UPDATE >>" class="btn btn-danger">
-
-	TAHUN PELAJARAN : 
-	<select name="e_tapel" class="btn btn-warning">
+    echo '<form action="'.$filenya.'" method="post" name="formxx">';
+    ?>
+    <div class="row">
+      <div class="col-md-9">
+      <p>Persentase Minimal : 
+  <input name="persen" type="number" value="<?=$y_persen;?>" size="20" class="btn btn-default">
+  
+  <input name="btnSMPpersen" type="submit" value="UPDATE" class="btn btn-primary btn-sm">
+  </p>
+        <?php 
+        
+        echo'
+	Tahun Pelajaran : 
+	<select name="e_tapel" class="btn btn-default">
 	<option value="'.balikin($gettapel).'" selected>--'.balikin($gettapel).'--</option>';
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_tapel ".
 							"ORDER BY tapel DESC");
@@ -570,8 +575,8 @@ foreach($sqlcaripersen as $datapersen){
 		}
 	while ($rowst = mysqli_fetch_assoc($qst));
 	echo '</select>
-	KELAS : 
-	<select name="e_kelas" class="btn btn-warning">
+	Kelas : 
+	<select name="e_kelas" class="btn btn-default">
 	<option value="'.$getkelas.'" selected>--'.$getkelas.'--</option>';
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_kelas ".
 							"ORDER BY kelas ASC");
@@ -584,28 +589,54 @@ foreach($sqlcaripersen as $datapersen){
 		}
 	while ($rowst = mysqli_fetch_assoc($qst));
 	echo '</select>	
-    <input name="btnPilihTapel" type="submit" value="PILIH" class="btn btn-danger">
-    </p>
-	<p>
-	<input name="kunci" type="text" value="'.$kunci2.'" size="20" class="btn btn-warning" placeholder="Cari Nama ...">
+    <input name="btnPilihTapel" type="submit" value="PILIH" class="btn btn-primary  btn-sm">
+    </p>';
+    ?>
+        
+  
+      <p>
+        
+<?php echo'<input name="kunci" type="text" value="'.$kunci2.'" size="20" class="btn btn-default" placeholder="Cari Nama ...">
 	<input name="getkelascari" type="hidden" value="'.$getkelas.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">
-	<input name="gettapelcari" type="hidden" value="'.$gettapel.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">
-	<input name="btnCARI" type="submit" value="CARI" class="btn btn-danger">
-	<input name="btnBTL" type="submit" value="RESET" class="btn btn-info">
-	</p>
+	<input name="gettapelcari" type="hidden" value="'.$gettapel.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">';
+  ?>
+    <input name="btnCARI" type="submit" value="Cari" class="btn btn-primary btn-sm">
+    <input name="btnBTL" type="submit" value="Reset" class="btn btn-info  btn-sm">
+  
+  </p>
+    
+    </p>	
+      </div>
+    
+    <div class="col-md-3">
+    <p>
+    <a href="tagihan_atur.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Atur Tagihan</a>
+    <a href="siswa.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Siswa</a>
+  
+    <input name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm">
+    <input name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm">
+    </p>
+      
+    </div>
+    </div>
+    
+    <?php
+    echo'
+	
+
 	<div class="table-responsive">          
-    <table class="table" border="1">
+    <table class="table" border="0">
 	<thead>
-	<tr valign="top" bgcolor="'.$warnaheader.'">
-	<td width="20"><strong><font color="'.$warnatext.'">BAYAR</font></strong></td>
-	<td width="150"><strong><font color="'.$warnatext.'">NIS</font></strong></td>
-	<td width="150"><strong><font color="'.$warnatext.'">Nama</font></strong></td>
-	<td width="150"><strong><font color="'.$warnatext.'">TAPEL - KELAS </font></strong></td>
-	<td width="150"><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
+  <tr>
+	<td width="20" class="text-center"><strong><font color="'.$warnatext.'">BAYAR</font></strong></td>
+	<td width="150" class="text-center"><strong><font color="'.$warnatext.'">NIS</font></strong></td>
+	<td width="150" class="text-center"><strong><font color="'.$warnatext.'">Nama</font></strong></td>
+	<td width="150" class="text-center"><strong><font color="'.$warnatext.'">TAPEL - KELAS </font></strong></td>
+	<td width="150" class="text-center"><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
 	<td colspan="'.$maxjmlqst.'"><strong><font color="'.$warnatext.'">PEMBAYARAN</font></strong></td>
-	<td width="150"><strong><font color="'.$warnatext.'">SISA TAGIHAN</font></strong></td>
-	<td width="150"><strong><font color="'.$warnatext.'">%</font></strong></td>
-	<td width="20"><strong><font color="'.$warnatext.'">HAPUS</font></strong></td>
+	<td width="150" class="text-center"><strong><font color="'.$warnatext.'">SISA TAGIHAN</font></strong></td>
+	<td width="150" class="text-center"><strong><font color="'.$warnatext.'">%</font></strong></td>
+	<td width="20" class="text-center"><strong><font color="'.$warnatext.'"><i class="zmdi zmdi-delete"></i></font></strong></td>
 	</tr>
 	</thead>
 	<tbody>';
@@ -678,7 +709,7 @@ foreach ($result as $tampilkan){
               <input name="gettapel" type="hidden" value="'.cegah($i_tapel).'" size="30" class="btn-warning">
               <input name="e_kunci" type="hidden" value="'.$kunci.'" size="30" class="btn-warning">
               <input name="getkddetail" type="hidden" value="'.$st_kd.'" size="30" class="btn-warning">
-              <input name="btnHAPUSDETAIL" type="submit" value="HAPUS" class="btn btn-danger "  onclick="return confirm(\'Anda yaking ingin menghapus data ini?\')">
+             <p> <button name="btnHAPUSDETAIL" type="submit" value="HAPUS" class="btn btn-danger "  onclick="return confirm(\'Anda yaking ingin menghapus data ini?\')"><i class="zmdi zmdi-delete"></i></button></p>
               </div>
             </form>';
 
@@ -739,7 +770,7 @@ for ($x = 1; $x <= $ulangitd; $x++) {
     echo'
     <td>
     
-    <a href="hapustagihan.php?id='.$i_nis.'&tapel='.cegah($i_tapel).'&kelas='.$i_kelas.'" class="btn btn-danger" onclick="return confirm(\'Anda yaking ingin menghapus data ini?\')">X</a>
+    <a href="hapustagihan.php?id='.$i_nis.'&tapel='.cegah($i_tapel).'&kelas='.$i_kelas.'" class="btn btn-danger" onclick="return confirm(\'Anda yaking ingin menghapus data ini?\')"><i class="zmdi zmdi-delete"></i></a>
     </td>
     </tr>';
 }

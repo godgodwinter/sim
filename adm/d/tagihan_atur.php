@@ -458,45 +458,85 @@ else if (($s == "baru") OR ($s == "edit"))
 		<?php
 	echo '<form action="'.$filenya.'" method="post" enctype="multipart/form-data" name="formx2">
 	<p>
-	TAHUN PELAJARAN : 
-	<select name="e_tapel" class="btn btn-warning" required>
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">Tahun Pelajaran</label>
+	<div class="col-sm-9">
+	  
+	<select name="e_tapel" class="btn btn-default form-control" >
 	<option value="'.$e_tapel.'" selected>--'.$e_tapel.'--</option>';
+	
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_tapel ".
 							"ORDER BY tapel DESC");
 	$rowst = mysqli_fetch_assoc($qst);
+	
 	do
 		{
 		$st_kd = nosql($rowst['kd']);
 		$st_nama1 = balikin($rowst['tapel']);
+	
 		echo '<option value="'.$st_nama1.'">'.$st_nama1.'</option>';
 		}
 	while ($rowst = mysqli_fetch_assoc($qst));
+	
 	echo '</select>
-	KELAS : 
-	<select name="e_kelas" class="btn btn-warning" required>
+	</div>
+	</div>
+
+	</p>
+	<br>
+	<br>
+	
+	
+	<p>
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">Kelas</label>
+	<div class="col-sm-9">
+	  
+	<select name="e_kelas" class="btn btn-default form-control" >
 	<option value="'.$e_kelas.'" selected>--'.$e_kelas.'--</option>';
+	
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_kelas ".
 							"ORDER BY kelas ASC");
 	$rowst = mysqli_fetch_assoc($qst);
+	
 	do
 		{
 		$st_kd = nosql($rowst['kd']);
 		$st_nama1 = balikin($rowst['kelas']);
+	
 		echo '<option value="'.$st_nama1.'">'.$st_nama1.'</option>';
 		}
 	while ($rowst = mysqli_fetch_assoc($qst));
-	echo '</select>	</p>
-	<p>
-	NOMINAL TAGIHAN : 
+	
+	echo '</select>
+	</div>
+	</div>
+
+	</p>
 	<br>
-	<input name="e_nominal_tagihan" type="text" value="'.$e_nominal_tagihan.'" size="30" class="btn-warning"><br>
-	<p>
-	WALI KELAS : 
 	<br>
-	<select name="username_guru" class="btn btn-warning" required>
+	
+	<p>
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">Nominal Tagihan</label>
+	<div class="col-sm-9">
+	  <input  name="e_nominal_tagihan" id="form-control-3" class="form-control b-a-2" type="number"  value="'.$e_nominal_tagihan.'" >
+	</div>
+	</div>
+
+	</p>
+	<br>
+	<br>
+	<p>
+	<div class="form-group">
+	<label class="col-sm-3 control-label" for="form-control-3">Wali Kelas</label>
+	<div class="col-sm-9">
+	  
+	<select name="username_guru" class="btn btn-default form-control" required >
 	<option value="'.$username_guru.'" selected>--'.$nama.'--</option>';
+	
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_user WHERE tipe='GURU' ".
-							"ORDER BY nama ASC");
+	"ORDER BY nama ASC");
 	$rowst = mysqli_fetch_assoc($qst);
 	do
 		{
@@ -505,13 +545,15 @@ else if (($s == "baru") OR ($s == "edit"))
 		echo '<option value="'.$usernamex.'">'.$nama.'</option>';
 		}
 	while ($rowst = mysqli_fetch_assoc($qst));
+	
 	echo '</select>
+	</div>
+	</div>
 
 	</p>
-	';
-
-	
-		echo '<p>
+	<br>
+	<br>
+	<p>
 		<div class="form-group">
 				<label>Foto :</label>
 				<input type="file" name="foto" >
@@ -562,31 +604,47 @@ $sqlcaripersen = mysqli_query($koneksi, "SELECT * FROM admin_setting");
 foreach($sqlcaripersen as $datapersen){
 	$y_persen=$datapersen['persen']; 
 }
-    echo '<form action="'.$filenya.'" method="post" name="formxx">
-	
-<p>Persentase Minimal : 
-<input name="persen" type="number" value="'.$y_persen.'" size="20" class="btn btn-warning">
+    echo '<form action="'.$filenya.'" method="post" name="formxx">';
+	?>
+	<div class="row">
+		<div class="col-md-8">
+			
+	<p>Persentase Minimal : 
+<input name="persen" type="number" value="<?=$y_persen;?>" size="20" class="btn btn-default">
 
-<input name="btnSMPpersen" type="submit" value="UPDATE >>" class="btn btn-danger">
+<input name="btnSMPpersen" type="submit" value="UPDATE" class="btn btn-primary btn-sm">
+
+		<p>
+			
+	<input name="kunci" type="text" value="<?php echo $kunci2; ?>" size="20" class="btn btn-default" placeholder="Kata Kunci...">
+	<input name="btnCARI" type="submit" value="Cari" class="btn btn-primary btn-sm">
+	<input name="btnBTL" type="submit" value="Reset" class="btn btn-info  btn-sm">
+
 </p>
+	
+	</p>	
+		</div>
+	
+	<div class="col-md-4">
 	<p>
-	<input name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-danger">
-	<a href="guru.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-danger">TAMBAH WALI KELAS</a>
-	<input name="btnIM" type="submit" value="IMPORT" class="btn btn-primary">
-	<input name="btnEX" type="submit" value="EXPORT" class="btn btn-success">
+	<a href="guru.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Wali Kelas</a>
+
+	<input name="btnBARU" type="submit" value="Tambah" class="btn btn-primary  btn-sm">
+	<input name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm">
+	<input name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm">
 	</p>
-	<br>
-	<p>
-	<input name="kunci" type="text" value="'.$kunci2.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">
-	<input name="btnCARI" type="submit" value="CARI" class="btn btn-danger">
-	<input name="btnBTL" type="submit" value="RESET" class="btn btn-info">
-	</p>
-	<div class="table-responsive">          
-	<table class="table" border="1">
+		
+	</div>
+	</div>
+	
+	<?php
+	echo'
+	<div class="table-responsive">     
+	<table class="table" border="0">
 	<thead>
-	<tr valign="top" bgcolor="'.$warnaheader.'">
-	<td width="20">&nbsp;</td>
-	<td width="20">&nbsp;</td>
+	<tr>
+	<th style="width: 32px"></th>
+	<th style="width: 32px"></th>
 	<td width="150"><strong><font color="'.$warnatext.'">TAPEL</font></strong></td>
 	<td width="150"><strong><font color="'.$warnatext.'">KELAS</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
@@ -625,7 +683,7 @@ foreach($sqlcaripersen as $datapersen){
 			<input type="checkbox" name="item'.$nomer.'" value="'.$i_kd.'">
 	        </td>
 			<td>
-			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'">EDIT</a>
+			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'"  class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i></a>
 			</td>
 			<td>'.$i_tapel.'</td>
 			<td>'.$i_kelas.'</td>
@@ -651,9 +709,9 @@ foreach($sqlcaripersen as $datapersen){
 	<input name="s" type="hidden" value="'.$s.'">
 	<input name="kd" type="hidden" value="'.$kdx.'">
 	<input name="page" type="hidden" value="'.$page.'">
-	<input name="btnALL" type="button" value="SEMUA" onClick="checkAll('.$count.')" class="btn btn-primary">
-	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-warning">
-	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger">
+	<input name="btnALL" type="button" value="SEMUA" onClick="checkAll('.$count.')" class="btn btn-default  btn-sm">
+	<input name="btnBTL" type="reset" value="BATAL" class="btn btn-info btn-sm">
+	<input name="btnHPS" type="submit" value="HAPUS" class="btn btn-danger btn-sm">
 	</td>
 	</tr>
 	</table>
