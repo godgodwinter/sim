@@ -126,18 +126,42 @@ echo '<table width="100%" height="300" border="0" cellspacing="3" cellpadding="0
 <tr valign="top">
 <td>
 
-<p>Password Lama : <br>
-<input name="passlama" type="password" size="15" class="btn btn-warning">
-</p>
-<p>Password Baru : <br>
-<input name="passbaru" type="password" size="15" class="btn btn-warning">
-</p>
-<p>RE-Password Baru : <br>
-<input name="passbaru2" type="password" size="15" class="btn btn-warning">
-</p>
 <p>
-<input name="btnBTL" type="reset" value="BATAL" class="btn btn-primary">
-<input name="btnSMP" type="submit" value="SIMPAN >>" class="btn btn-danger">
+<div class="form-group">
+<label class="col-sm-3 control-label" for="form-control-3">Password Lama :</label>
+<div class="col-sm-9">
+  <input  name="passlama" id="form-control-3" class="form-control b-a-2" type="password">
+</div>
+</div>
+
+</p>
+<br>
+<br>
+<p>
+<div class="form-group">
+<label class="col-sm-3 control-label" for="form-control-3">Password Baru :</label>
+<div class="col-sm-9">
+  <input  name="passbaru" id="form-control-3" class="form-control b-a-2" type="password">
+</div>
+</div>
+
+</p>
+<br>
+<br>
+<p>
+<div class="form-group">
+<label class="col-sm-3 control-label" for="form-control-3">RE-Password Baru :</label>
+<div class="col-sm-9">
+  <input  name="passbaru2" id="form-control-3" class="form-control b-a-2" type="password">
+</div>
+</div>
+
+</p>
+<br>
+<br>
+<p>
+<input name="btnBTL" type="submit" value="Batal" class="btn btn-info btn-pill m-w-120">
+<input name="btnSMP" type="submit" value="Simpan" class="btn btn-primary btn-pill m-w-120">
 </p>
 
 </td>

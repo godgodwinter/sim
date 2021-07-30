@@ -817,7 +817,7 @@ else if (($s == "baru") OR ($s == "edit"))
 	
 	<p>
 	<div class="form-group">
-	<label class="col-sm-3 control-label" for="form-control-3">NAMA SISWA</label>
+	<label class="col-sm-3 control-label" for="form-control-3">Nama Siswa</label>
 	<div class="col-sm-9">
 	  <input  name="e_nama" id="form-control-3" class="form-control b-a-2" type="text"  value="'.$e_nama.'"  >
 	</div>

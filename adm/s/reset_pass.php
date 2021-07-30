@@ -140,22 +140,39 @@ $data = mysqli_fetch_array($result);
 
 
 
-echo '<form action="'.$filenya.'" method="post" name="formx">
-<p>
-<input name="kunci" type="text" value="'.$kunci2.'" size="20" class="btn btn-warning" placeholder="Kata Kunci...">
-<input name="btnCARI" type="submit" value="CARI" class="btn btn-danger">
-<input name="btnBTL" type="submit" value="RESET" class="btn btn-info">
-</p>
+echo '<form action="'.$filenya.'" method="post" name="formx">';
+?>
+<div class="row">
+	<div class="col-md-9">
+	<p>
+		
+<input name="kunci" type="text" value="<?php echo $kunci2; ?>" size="20" class="btn btn-default" placeholder="Kata Kunci...">
+<input name="btnCARI" type="submit" value="Cari" class="btn btn-primary btn-sm">
+<input name="btnBTL" type="submit" value="Reset" class="btn btn-info  btn-sm">
+
+</p>	
+	</div>
+
+<div class="col-md-3">
+
+
+
+	
+</div>
+</div>
+
+<?php
+echo'
 	
 
 <div class="table-responsive">          
-<table class="table" border="1">
+<table class="table" border="1">     
+<table class="table" border="0">
 <thead>
-
-<tr valign="top" bgcolor="'.$warnaheader.'">
-<td width="100"><strong><font color="'.$warnatext.'">TIPE</font></strong></td>
-<td width="150"><strong><font color="'.$warnatext.'">IMAGE</font></strong></td>
-<td width="50"><strong><font color="'.$warnatext.'">NOINDUK</font></strong></td>
+<tr>
+<td width="100" class="text-center"><strong><font color="'.$warnatext.'">TIPE</font></strong></td>
+<td width="150" class="text-center"><strong><font color="'.$warnatext.'">IMAGE</font></strong></td>
+<td width="150"><strong><font color="'.$warnatext.'">NOINDUK</font></strong></td>
 <td><strong><font color="'.$warnatext.'">NAMA</font></strong></td>
 </tr>
 </thead>
@@ -184,13 +201,19 @@ if ($count != 0)
 		$i_akses = $i_kode;
 
 
+		$nil_foto0 = "$sumber/img/avatar/siswa.jpg"; //gambar default
 		$nil_foto1 = "$sumber/filebox/profil/$i_kd/thumb-$i_kd.jpg";
 
+		if (file_exists($nil_foto1)) {
+			$gambar=$nil_foto1;
+		 }else{
+			$gambar=$nil_foto0;
+		}
 		
 		echo "<tr valign=\"top\" bgcolor=\"$warna\" onmouseover=\"this.bgColor='$warnaover';\" onmouseout=\"this.bgColor='$warna';\">";
-		echo '<td>'.$i_tipe.'</td>
-		<td><img src="'.$nil_foto1.'" width="150"></td>
-		<td>'.$i_kode.'</td>
+		echo '<td  class="text-center">'.$i_tipe.'</td>
+		<td class="text-center"><img src="'.$gambar.'" width="150"></td>
+		<td class="text-center">'.$i_kode.'</td>
 		<td>
 		'.$i_nama.'
 		
