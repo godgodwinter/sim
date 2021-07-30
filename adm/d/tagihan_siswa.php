@@ -675,14 +675,114 @@ foreach ($result as $tampilkan){
                 <h4 class="modal-title">'.$i_nis.' - '.$i_nama.' </h4>
               </div>
               <div class="modal-body">
-              <form action="'.$filenya.'" method="post" name="formxx">
-                <p>Jumlah Pembayaran</p>
-                <input name="i_nis" type="hidden" value="'.$i_nis.'" size="30" class="btn-warning">
-                <input name="getkelas" type="hidden" value="'.$i_kelas.'" size="30" class="btn-warning">
-                <input name="gettapel" type="hidden" value="'.cegah($i_tapel).'" size="30" class="btn-warning">
-                <input name="e_kunci" type="hidden" value="'.$kunci.'" size="30" class="btn-warning">
-                <input name="e_kd" type="hidden" value="'.$i_kd.'" size="30" class="btn-warning">
-                <input name="e_jml_bayar" type="text" value="0" size="30" class="btn-warning">
+              <form action="'.$filenya.'" method="post" name="formxx">';
+              ?>
+              <div class="row">
+                <div class="col-md-4">
+                
+                <?php
+              echo'
+                <p>Jumlah Pembayaran :</p>
+                <input name="i_nis" type="hidden" value="'.$i_nis.'" size="30" class="btn-default">
+                <input name="getkelas" type="hidden" value="'.$i_kelas.'" size="30" class="btn-default">
+                <input name="gettapel" type="hidden" value="'.cegah($i_tapel).'" size="30" class="btn-default">
+                <input name="e_kunci" type="hidden" value="'.$kunci.'" size="30" class="btn-default">
+                <input name="e_kd" type="hidden" value="'.$i_kd.'" size="30" class="btn-default">';
+               ?>
+            
+
+                </div>
+              
+              <div class="col-md-4">
+              <p>
+             
+              <input type="text" value="Rp. 0 ,00" size="30" class="btn-default no-border" id="inputrupiah" readonly>
+
+              </p>
+                
+              </div>
+              </div>
+              
+            
+
+               
+<div class="col-md-12">
+	<input name="e_jml_bayar" class="form-control btn-default " type="text" value="0" size="30" id="dengan-rupiah"/>
+</div>
+<br>
+
+<script type="text/javascript">
+
+
+	/* Dengan Rupiah */
+	var dengan_rupiah = document.getElementById('dengan-rupiah');
+	var inputrupiah = document.getElementById('inputrupiah');
+	var labelrupiah = document.getElementById('labelrupiah');
+	dengan_rupiah.addEventListener('keyup', function(e)
+	{
+		inputrupiah.value = formatRupiah(this.value, 'Rp. ');
+		dengan_rupiah.value = unformatRupiah(this.value);
+		labelrupiah.value = formatRupiah(dengan_rupiah.value, 'Rp. ');
+	});
+	
+	dengan_rupiah.addEventListener('keydown', function(event)
+	{
+		limitCharacter(event);
+	});
+	
+	/* Fungsi */
+	function unformatRupiah(bilangan)
+	{
+
+		return bilangan;
+  };
+
+	/* Fungsi */
+	function formatRupiah(bilangan, prefix)
+	{
+		var number_string = bilangan.replace(/[^,\d]/g, '').toString(),
+			split	= number_string.split(','),
+			sisa 	= split[0].length % 3,
+			rupiah 	= split[0].substr(0, sisa),
+			ribuan 	= split[0].substr(sisa).match(/\d{1,3}/gi);
+			
+		if (ribuan) {
+			separator = sisa ? '.' : '';
+			rupiah += separator + ribuan.join('.');
+		}
+		
+		rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
+		return prefix == undefined ? rupiah : (rupiah ? 'Rp. ' + rupiah + ' ,00': '');
+	}
+	
+	function limitCharacter(event)
+	{
+		key = event.which || event.keyCode;
+		if ( key != 188 // Comma
+			 && key != 8 // Backspace
+			 && key != 17 && key != 86 & key != 67 // Ctrl c, ctrl v
+			 && (key < 48 || key > 57) // Non digit
+			 && key !=97 // Numpad1
+			 && key !=98 // Numpad1
+			 && key !=99 // Numpad1
+			 && key !=100 // Numpad1
+			 && key !=101 // Numpad1
+			 && key !=102 // Numpad1
+			 && key !=103 // Numpad1
+			 && key !=104 // Numpad1
+			 && key !=105 // Numpad1
+			 // Dan masih banyak lagi seperti tombol del, panah kiri dan kanan, tombol tab, dll
+			) 
+		{
+			event.preventDefault();
+			return false;
+		}
+	}
+</script>
+             
+               
+               <?php 
+                echo'
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>

@@ -791,6 +791,8 @@ else if (($s == "baru") OR ($s == "edit"))
 	$e_nama = balikin($rowx['nama']);
 	$e_tapel = balikin($rowx['tapel_nama']);
 	$e_kelas = balikin($rowx['kelas_nama']);
+	$e_moodle_user = balikin($rowx['moodle_user']);
+	$e_moodle_pass = balikin($rowx['moodle_pass']);
 	?>
 	
 	
