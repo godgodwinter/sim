@@ -201,7 +201,7 @@ if ($count != 0)
 		$i_akses = $i_kode;
 
 
-		$nil_foto0 = "$sumber/img/avatar/siswa.jpg"; //gambar default
+		$nil_foto0 = "$sumber/img/avatar/siswa.png"; //gambar default
 		$nil_foto1 = "$sumber/filebox/profil/$i_kd/thumb-$i_kd.jpg";
 
 		if (file_exists($nil_foto1)) {
