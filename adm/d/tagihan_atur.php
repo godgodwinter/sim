@@ -268,6 +268,92 @@ else
     //jika update
     if ($s == "edit")
         {
+
+			if(!empty($_FILES['foto']['name'])){
+			
+				//cek
+				$qcc = mysqli_query($koneksi, "SELECT * FROM tagihan_atur ".
+										"WHERE tapel = '$e_tapel' AND kelas = '$e_kelas'");
+				$rcc = mysqli_fetch_assoc($qcc);
+				$tcc = mysqli_num_rows($qcc);
+
+				
+				// if()
+$rand = rand();
+$ekstensi =  array('png','jpg','jpeg','gif');
+$filename = $_FILES['foto']['name'];
+$ukuran = $_FILES['foto']['size'];
+$ext = pathinfo($filename, PATHINFO_EXTENSION);
+
+
+			//nilai
+			$path1 = "../../img/scan/$kd";
+			$path2 = "../../img/scan";
+			chmod($path1,0777);
+			chmod($path2,0777);
+
+			$folderUpload =$sumber.'/img/scan/';
+
+# periksa apakah folder sudah ada
+// if (!is_dir($folderUpload)) {
+//     # jika tidak maka folder harus dibuat terlebih dahulu
+//     mkdir($folderUpload, 0777, $rekursif = true);
+// }
+ 
+if(!in_array($ext,$ekstensi) ) {
+	// echo'test';
+	// var_dump($_FILES['foto']['name']);
+	// exit;
+	// mysqli_query($koneksi, "INSERT INTO tagihan_atur(tapel, kelas, nominal_tagihan) VALUES ".
+	// "('$e_tapel', '$e_kelas', '$e_nominal_tagihan')");
+	// header("location:tagihan_atur.php?s=baru&kd=8a44e7e8597a4ea59722efaa68317a4e");
+}else{
+	if($ukuran < 1044070){		
+		$xx = $rand.'_'.$filename;
+		
+$tmp = $sumber.'/img/scan/'.$rand.'_'.$filename;
+$ok  = move_uploaded_file($file_tmp, $tmp);
+// if (is_uploaded_file($_FILES['foto']['tmp_name'])) {
+// 	$cek = move_uploaded_file ($_FILES['foto']['tmp_name'],$tmp);
+// 	if ($cek) {
+// 		echo "File berhasil diupload" ;
+// 	} else {
+// 		echo "File gagal diupload" ;
+// 	}
+// 	} 
+
+copy($_FILES['foto']['tmp_name'],"../../img/scan/".$rand.'_'.$filename);
+		// move_uploaded_file($_FILES['foto']['tmp_name'], $sumber.'/img/scan/'.$rand.'_'.$filename);
+		// var_dump($_FILES['foto']);
+		// die;
+
+		  //update
+		  mysqli_query($koneksi, "UPDATE tagihan_atur SET tapel = '$e_tapel', ".
+		  "kelas = '$e_kelas', ".
+		  "username_guru = '$username_guru', ".
+		  "nama = '$nama', ".
+		  "user_foto = '$xx', ".
+		  "nominal_tagihan = '$e_nominal_tagihan' ".
+		  "WHERE kd = '$kd'");
+//update guru_mapel
+// mysqli_query($koneksi, "UPDATE guru_mapel SET mapel_nama = '$e_nama' ".
+//                 "WHERE mapel_kode = '$e_kode'");
+//re-direct
+xloc($filenya);
+exit();
+            // mysqli_query($koneksi, "INSERT INTO tagihan_atur(tapel, kelas, nominal_tagihan,user_foto,username_guru,nama) VALUES ".
+			// 				"('$e_tapel', '$e_kelas', '$e_nominal_tagihan','$xx','$username_guru','$nama')");
+			// // var_dump("INSERT INTO tagihan_atur(tapel, kelas, nominal_tagihan,user_foto) VALUES ".
+			// // "('$e_tapel', '$e_kelas', '$e_nominal_tagihan','$xx')");				
+            // //re-direct
+            // xloc($filenya);
+            // exit();
+			// }
+			}
+		}
+			}else{
+				
+			
         //update
         mysqli_query($koneksi, "UPDATE tagihan_atur SET tapel = '$e_tapel', ".
                         "kelas = '$e_kelas', ".
@@ -282,6 +368,7 @@ else
         xloc($filenya);
         exit();
         }
+	}
     //jika baru
     if ($s == "baru")
         {
@@ -648,6 +735,7 @@ foreach($sqlcaripersen as $datapersen){
 	<td width="150"><strong><font color="'.$warnatext.'">TAPEL</font></strong></td>
 	<td width="150"><strong><font color="'.$warnatext.'">KELAS</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
+	<td ><strong><font color="'.$warnatext.'">SCAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">WALI KELAS</font></strong></td>
 	
 	</tr>
@@ -675,6 +763,7 @@ foreach($sqlcaripersen as $datapersen){
 			$i_nominal_tagihan = balikin($data['nominal_tagihan']);
 			$username_guru = balikin($data['username_guru']);
 			$nama = balikin($data['nama']);
+			$user_foto = balikin($data['user_foto']);
 			if($i_kd==0){
 
 			}else{	
@@ -688,6 +777,17 @@ foreach($sqlcaripersen as $datapersen){
 			<td>'.$i_tapel.'</td>
 			<td>'.$i_kelas.'</td>
 			<td>'.rupiah($i_nominal_tagihan).'</td>
+			<td>';
+			if($user_foto!==""){
+				echo'
+				<a href="'.$sumber.'/img/scan/'.$user_foto.'"  class="btn btn-primary` btn-sm"><i class="zmdi zmdi-image"></i></a>';
+
+			}else{
+				echo'
+				<a href="'.$sumber.'/img/scan/404.png"  class="btn btn-warning btn-sm"><i class="zmdi zmdi-block"></i></a>';
+			}
+			echo'
+			</td>
 			<td>'.$nama.'</td>
 			
 	        </tr>';
