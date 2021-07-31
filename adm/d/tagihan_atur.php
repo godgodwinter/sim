@@ -539,6 +539,7 @@ else if (($s == "baru") OR ($s == "edit"))
 	$e_nominal_tagihan = balikin($rowx['nominal_tagihan']);
 	$username_guru = balikin($rowx['username_guru']);
 	$nama = balikin($rowx['nama']);
+	$user_foto = balikin($rowx['user_foto']);
 	?>
 <div class="row">
 	<div class="col-md-6">
@@ -619,7 +620,7 @@ else if (($s == "baru") OR ($s == "edit"))
 	<label class="col-sm-3 control-label" for="form-control-3">Wali Kelas</label>
 	<div class="col-sm-9">
 	  
-	<select name="username_guru" class="btn btn-default form-control" required >
+	<select name="username_guru" class="btn btn-default form-control" >
 	<option value="'.$username_guru.'" selected>--'.$nama.'--</option>';
 	
 	$qst = mysqli_query($koneksi, "SELECT * FROM m_user WHERE tipe='GURU' ".
@@ -646,8 +647,20 @@ else if (($s == "baru") OR ($s == "edit"))
 				<input type="file" name="foto" >
 				<p style="color: red">Ekstensi yang diperbolehkan .png | .jpg | .jpeg | .gif</p>
 			</div>	
-		<br>
 	<p>
+	';
+	if($user_foto!==""){
+	?>
+	<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="<?php echo $sumber.'/img/scan/'.$user_foto;?>" alt="Scan Document" width="250px">
+
+</div>
+<br>
+	<?php
+	}else{
+		echo 'Gambar Scan Belum di upload / tidak ditemukan <br><br>';
+	}
+	echo'
 	<input name="jml" type="hidden" value="'.$count.'">
 	<input name="s" type="hidden" value="'.$s.'">
 	<input name="kd" type="hidden" value="'.$kdx.'">

@@ -552,7 +552,7 @@ foreach($sqlcaripersen as $datapersen){
     echo '<form action="'.$filenya.'" method="post" name="formxx">';
     ?>
     <div class="row">
-      <div class="col-md-9">
+      <div class="col-md-8">
       <p>Persentase Minimal : 
   <input name="persen" type="number" value="<?=$y_persen;?>" size="20" class="btn btn-default">
   
@@ -608,14 +608,21 @@ foreach($sqlcaripersen as $datapersen){
     </p>	
       </div>
     
-    <div class="col-md-3">
+    <div class="col-md-4">
     <p>
     <a href="tagihan_atur.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Atur Tagihan</a>
     <a href="siswa.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Siswa</a>
   
-    <input name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm">
-    <input name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm">
-    </p>
+    <button name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Upload </button>
+    <button name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm"><i class="zmdi zmdi-case-download"></i> Export</button>
+<?php 
+
+$i_tapel = balikin($gettapel);
+$i_kelas = balikin($getkelas);
+?>
+    <a name="btnCetak"  href="tagihan_siswa_cetakall.php?tapel=<?=$i_tapel;?>&kelas=<?=$i_kelas;?>" class="btn btn-success btn-sm"><i class="zmdi zmdi-print"></i> Cetak PDF</a>
+   
+  </p>
       
     </div>
     </div>
