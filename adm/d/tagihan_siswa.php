@@ -149,7 +149,7 @@ require('../../inc/class/excel/BIFFwriter.php');
 require('../../inc/class/excel/worksheet.php');
 require('../../inc/class/excel/workbook.php');
 //nama file e...
-$i_filename = "tagihan_atur.xls";
+$i_filename = "tagihan_siswa.xls";
 $i_judul = "Pengaturan Tagihan";
 //header file
 function HeaderingExcel($i_filename)
@@ -165,25 +165,30 @@ HeaderingExcel($i_filename);
 $workbook = new Workbook("-");
 $worksheet1 =& $workbook->add_worksheet($i_judul);
 $worksheet1->write_string(0,0,"NO.");
-$worksheet1->write_string(0,1,"TAPEL");
-$worksheet1->write_string(0,2,"KELAS");
-$worksheet1->write_string(0,3,"Nominal Tagihan");
+$worksheet1->write_string(0,1,"NIS");
+$worksheet1->write_string(0,2,"NAMA");
+$worksheet1->write_string(0,3,"TAPEL");
+$worksheet1->write_string(0,4,"KELAS");
+$worksheet1->write_string(0,5,"TAGIHAN ATUR");
 //data
-$qdt = mysqli_query($koneksi, "SELECT * FROM tagihan_atur ".
-                        "ORDER BY tapel ASC");
+$qdt = mysqli_query($koneksi, "SELECT * FROM tagihan_siswa ".
+                        "ORDER BY nama ASC");
 $rdt = mysqli_fetch_assoc($qdt);
 do
     {
     //nilai
     $dt_nox = $dt_nox + 1;
-    $dt_kode = balikin($rdt['tapel']);
-    $dt_nama = balikin($rdt['kelas']);
-    $dt_nominal_tagihan = balikin($rdt['nominal_tagihan']);
+    $dt_nis = balikin($rdt['username_siswa']);
+    $dt_nama = balikin($rdt['nama']);
+    $dt_tapel = balikin($rdt['tapel']);
+    $dt_kelas = balikin($rdt['kelas']);
+    $dt_tagA = balikin($rdt['tagihan_atur_kd']);
     //ciptakan
-    $worksheet1->write_string($dt_nox,0,$dt_nox);
-    $worksheet1->write_string($dt_nox,1,$dt_kode);
-    $worksheet1->write_string($dt_nox,2,$dt_nama);
-    $worksheet1->write_string($dt_nox,3,rupiah($dt_nominal_tagihan));
+    $worksheet1->write_string($dt_nox,0,$dt_nis);
+    $worksheet1->write_string($dt_nox,1,$dt_nama);
+    $worksheet1->write_string($dt_nox,2,$dt_tapel);
+    $worksheet1->write_string($dt_nox,3,$dt_kelas);
+    $worksheet1->write_string($dt_nox,3,$dt_tagA);
     }
 while ($rdt = mysqli_fetch_assoc($qdt));
 //close
