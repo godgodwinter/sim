@@ -61,7 +61,7 @@ else
         chmod($path1,0777);
         chmod($path2,0777);
         //nama file import, diubah menjadi baru...
-        $filex_namex2 = "mapel.xls";
+        $filex_namex2 = "tagihan_siswa.xls";
         //mengkopi file
         copy($_FILES['filex_xls']['tmp_name'],"../../filebox/excel/$filex_namex2");
         //chmod
@@ -88,19 +88,23 @@ else
                   // sedangkan alamat ada di kolom B
                   $i_xyz = md5("$x$i");
                   $i_no = cegah($sheet['A']);
-                  $i_tapel = cegah($sheet['B']);
-                  $i_kelas = cegah($sheet['C']);
-				  $i_nominal_tagihan = cegah($sheet['D']);
-					//menghilangkan angka 00 dibelakang koma
-				  $arr=(explode(",",$i_nominal_tagihan));
-				  //menghilangkan selain angka
-				  $i_nominal_tagihan_str = preg_replace("/[^0-9]/", "", $arr[0]);
-				  //konversi ke int
-				//   var_dump($i_nominal_tagihan_str);
-				  $i_nominal_tagihan_int = (int) $i_nominal_tagihan_str;
-				//   var_dump($i_nominal_tagihan_int);
+                  $i_kd = cegah($sheet['B']);
+                  $i_nis = cegah($sheet['C']);
+                  $i_nama = cegah($sheet['D']);
+                  $i_tapel = cegah($sheet['E']);
+                  $i_kelas = cegah($sheet['F']);
+                  $i_tagA = cegah($sheet['G']);
+                
+				// 	//menghilangkan angka 00 dibelakang koma
+				//   $arr=(explode(",",$i_nominal_tagihan));
+				//   //menghilangkan selain angka
+				//   $i_nominal_tagihan_str = preg_replace("/[^0-9]/", "", $arr[0]);
+				//   //konversi ke int
+				// //   var_dump($i_nominal_tagihan_str);
+				//   $i_nominal_tagihan_int = (int) $i_nominal_tagihan_str;
+				// //   var_dump($i_nominal_tagihan_int);
                     //cek
-                    $qcc = mysqli_query($koneksi, "SELECT * FROM tagihan_atur ".
+                    $qcc = mysqli_query($koneksi, "SELECT * FROM tagihan_siswa ".
                                             "WHERE  tapel = '$i_tapel' AND kelas = '$i_kelas'");
                     $rcc = mysqli_fetch_assoc($qcc);
                     $tcc = mysqli_num_rows($qcc);
@@ -113,8 +117,8 @@ else
                     else
                         {
                         //insert
-                        mysqli_query($koneksi, "INSERT INTO tagihan_atur(tapel, kelas, nominal_Tagihan) VALUES ".
-                                        "('$i_tapel', '$i_kelas', '$i_nominal_tagihan_int')");
+                        mysqli_query($koneksi, "INSERT INTO tagihan_siswa(kd, username_siswa, nama, tapel, kelas, tagihan_atur_kd) VALUES ".
+                                        "('$i_kd', '$i_nis', '$i_nama', '$i_tapel', '$i_kelas','$i_tagA')");
 						}
 					//	var_dump("INSERT INTO tagihan_atur(kd,tapel, kelas, nominal_Tagihan) VALUES ".
 				//		"('','$i_tapel', '$i_kelas', '$i_nominal_tagihan_int')");
@@ -165,11 +169,12 @@ HeaderingExcel($i_filename);
 $workbook = new Workbook("-");
 $worksheet1 =& $workbook->add_worksheet($i_judul);
 $worksheet1->write_string(0,0,"NO.");
-$worksheet1->write_string(0,1,"NIS");
-$worksheet1->write_string(0,2,"NAMA");
-$worksheet1->write_string(0,3,"TAPEL");
-$worksheet1->write_string(0,4,"KELAS");
-$worksheet1->write_string(0,5,"TAGIHAN ATUR");
+$worksheet1->write_string(0,1,"KD.");
+$worksheet1->write_string(0,2,"NIS");
+$worksheet1->write_string(0,3,"NAMA");
+$worksheet1->write_string(0,4,"TAPEL");
+$worksheet1->write_string(0,5,"KELAS");
+$worksheet1->write_string(0,6,"TAGIHAN ATUR");
 //data
 $qdt = mysqli_query($koneksi, "SELECT * FROM tagihan_siswa ".
                         "ORDER BY nama ASC");
@@ -178,17 +183,20 @@ do
     {
     //nilai
     $dt_nox = $dt_nox + 1;
+    $dt_kd = balikin($rdt['kd']);
     $dt_nis = balikin($rdt['username_siswa']);
     $dt_nama = balikin($rdt['nama']);
     $dt_tapel = balikin($rdt['tapel']);
     $dt_kelas = balikin($rdt['kelas']);
     $dt_tagA = balikin($rdt['tagihan_atur_kd']);
     //ciptakan
-    $worksheet1->write_string($dt_nox,0,$dt_nis);
-    $worksheet1->write_string($dt_nox,1,$dt_nama);
-    $worksheet1->write_string($dt_nox,2,$dt_tapel);
-    $worksheet1->write_string($dt_nox,3,$dt_kelas);
-    $worksheet1->write_string($dt_nox,3,$dt_tagA);
+    $worksheet1->write_string($dt_nox,0,$dt_nox);
+    $worksheet1->write_string($dt_nox,1,$dt_kd);
+    $worksheet1->write_string($dt_nox,2,$dt_nis);
+    $worksheet1->write_string($dt_nox,3,$dt_nama);
+    $worksheet1->write_string($dt_nox,4,$dt_tapel);
+    $worksheet1->write_string($dt_nox,5,$dt_kelas);
+    $worksheet1->write_string($dt_nox,6,$dt_tagA);
     }
 while ($rdt = mysqli_fetch_assoc($qdt));
 //close
@@ -477,6 +485,22 @@ require("../../template/js/swap.js");
 if ($s == "import")
 	{
 	?>
+<div class="row">
+	<div class="col-md-12">
+		<?php
+	echo '<form action="'.$filenya.'" method="post" enctype="multipart/form-data" name="formxx2">
+	<p>
+		<input name="filex_xls" type="file" size="30" class="btn btn-warning">
+	</p>
+	<p>
+		<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info">
+		<input name="btnIMX" type="submit" value="IMPORT >>" class="btn btn-danger">
+	</p>
+	</form>';	
+	?>
+	</div>
+</div>
+
 <?php
 	}
 //jika edit / baru
@@ -620,6 +644,7 @@ foreach($sqlcaripersen as $datapersen){
   
     <button name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Upload </button>
     <button name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm"><i class="zmdi zmdi-case-download"></i> Export</button>
+    <button name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Import </button>
 <?php 
 
 $i_tapel = balikin($gettapel);

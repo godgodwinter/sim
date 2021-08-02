@@ -88,9 +88,14 @@ else
                   // sedangkan alamat ada di kolom B
                   $i_xyz = md5("$x$i");
                   $i_no = cegah($sheet['A']);
-                  $i_tapel = cegah($sheet['B']);
-                  $i_kelas = cegah($sheet['C']);
-				  $i_nominal_tagihan = cegah($sheet['D']);
+                  $i_kd = cegah($sheet['B']);
+                  $i_tapel = cegah($sheet['C']);
+				  $i_kelas = cegah($sheet['D']);
+				  $i_nominal_tagihan = cegah($sheet['E']);
+				  $i_uF = cegah($sheet['F']);
+				  $i_uG = cegah($sheet['G']);
+				  $i_nama = cegah($sheet['H']);
+
 					//menghilangkan angka 00 dibelakang koma
 				  $arr=(explode(",",$i_nominal_tagihan));
 				  //menghilangkan selain angka
@@ -113,8 +118,8 @@ else
                     else
                         {
                         //insert
-                        mysqli_query($koneksi, "INSERT INTO tagihan_atur(tapel, kelas, nominal_Tagihan,user_foto) VALUES ".
-                                        "('$i_tapel', '$i_kelas', '$i_nominal_tagihan_int','')");
+                        mysqli_query($koneksi, "INSERT INTO tagihan_atur(kd, tapel, kelas, nominal_Tagihan,user_foto,username_guru,nama) VALUES ".
+                                        "('$i_kd','$i_tapel', '$i_kelas', '$i_nominal_tagihan_int','$i_uF','$i_uG','$nama')");
 						}
 						// var_dump("INSERT INTO tagihan_atur(tapel, kelas, nominal_Tagihan,user_foto) VALUES ".
 						// "('','$i_tapel', '$i_kelas', '$i_nominal_tagihan_int','')");
@@ -165,9 +170,13 @@ HeaderingExcel($i_filename);
 $workbook = new Workbook("-");
 $worksheet1 =& $workbook->add_worksheet($i_judul);
 $worksheet1->write_string(0,0,"NO.");
-$worksheet1->write_string(0,1,"TAPEL");
-$worksheet1->write_string(0,2,"KELAS");
-$worksheet1->write_string(0,3,"Nominal Tagihan");
+$worksheet1->write_string(0,1,"KD");
+$worksheet1->write_string(0,2,"TAPEL");
+$worksheet1->write_string(0,3,"KELAS");
+$worksheet1->write_string(0,4,"Nominal Tagihan");
+$worksheet1->write_string(0,5,"USER FOTO");
+$worksheet1->write_string(0,6,"USERNAME GURU");
+$worksheet1->write_string(0,7,"NAMA");
 //data
 $qdt = mysqli_query($koneksi, "SELECT * FROM tagihan_atur ".
                         "ORDER BY tapel ASC");
@@ -176,14 +185,22 @@ do
     {
     //nilai
     $dt_nox = $dt_nox + 1;
-    $dt_kode = balikin($rdt['tapel']);
-    $dt_nama = balikin($rdt['kelas']);
+	$dt_kd = balikin($rdt['kd']);
+    $dt_tapel = balikin($rdt['tapel']);
+    $dt_kelas = balikin($rdt['kelas']);
     $dt_nominal_tagihan = balikin($rdt['nominal_tagihan']);
+	$dt_uF = balikin($rdt['user_foto']);
+	$dt_uG = balikin($rdt['username_guru']);
+	$dt_nama = balikin($rdt['nama']);
     //ciptakan
     $worksheet1->write_string($dt_nox,0,$dt_nox);
-    $worksheet1->write_string($dt_nox,1,$dt_kode);
-    $worksheet1->write_string($dt_nox,2,$dt_nama);
-    $worksheet1->write_string($dt_nox,3,rupiah($dt_nominal_tagihan));
+    $worksheet1->write_string($dt_nox,1,$dt_kd);
+    $worksheet1->write_string($dt_nox,2,$dt_tapel);
+	$worksheet1->write_string($dt_nox,3,$dt_kelas);
+    $worksheet1->write_string($dt_nox,4,rupiah($dt_nominal_tagihan));
+	$worksheet1->write_string($dt_nox,5,$dt_uF);
+	$worksheet1->write_string($dt_nox,6,$dt_uG);
+	$worksheet1->write_string($dt_nox,7,$dt_nama);
     }
 while ($rdt = mysqli_fetch_assoc($qdt));
 //close
