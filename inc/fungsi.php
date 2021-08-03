@@ -209,7 +209,25 @@ function balikin2($str)
 	$str = preg_replace($search,$replace,$str);
 	return $str;
   	}
+//untuk kenaikan kelas
+function naik($str)
+	{
+		//  $stre=str_replace('X','Xzz',$str);
+		//  $str=substr($stre,1);
+		 
+	$strex=explode(" ",$str);
+	if($strex[0]==="X"){
+		$strex[0]="XI";
+	}else if($strex[0]==="XI"){
+		$strex[0]="XII";
+	}else if($strex[0]==="XII"){
+		$strex[0]="Alumni";
+	}
 
+	$str=implode(" ",$strex);
+	
+	return $str;
+	}
 
 
 //untuk stripfile
