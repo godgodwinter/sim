@@ -207,7 +207,7 @@ else
                   $i_kd = cegah($sheet['B']);
                   $i_tagihan_siswa_kd = cegah($sheet['C']);
                   $i_jml_bayar = cegah($sheet['D']);
-                  $i_tgl_bayar = cegah($sheet['E']);
+                  $i_tgl_bayar = $sheet['E'];
                   // $i_kelas = cegah($sheet['F']);
                   // $i_tagA = cegah($sheet['G']);
                 
