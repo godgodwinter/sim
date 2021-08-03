@@ -763,7 +763,9 @@ foreach($sqlcaripersen as $datapersen){
 	<th style="width: 32px"></th>
 	<th style="width: 32px"></th>
 	<td width="150"><strong><font color="'.$warnatext.'">TAPEL</font></strong></td>
+	<td width="150"><strong><font color="'.$warnatext.'">TAPEL coba</font></strong></td>
 	<td width="150"><strong><font color="'.$warnatext.'">KELAS</font></strong></td>
+	<td width="150"><strong><font color="'.$warnatext.'">KELAS coba</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">SCAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">WALI KELAS</font></strong></td>
@@ -789,7 +791,9 @@ foreach($sqlcaripersen as $datapersen){
 			$nomer = $nomer + 1;
 			$i_kd = nosql($data['kd']);
 			$i_tapel = balikin($data['tapel']);
+			$i_tapel_coba = naik_t($i_tapel);
 			$i_kelas = balikin($data['kelas']);
+			$i_kelas_coba = naik_k($data['kelas']);
 			$i_nominal_tagihan = balikin($data['nominal_tagihan']);
 			$username_guru = balikin($data['username_guru']);
 			$nama = balikin($data['nama']);
@@ -805,7 +809,9 @@ foreach($sqlcaripersen as $datapersen){
 			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'"  class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i></a>
 			</td>
 			<td>'.$i_tapel.'</td>
+			<td>'.$i_tapel_coba.'</td>
 			<td>'.$i_kelas.'</td>
+			<td>'.$i_kelas_coba.'</td>
 			<td>'.rupiah($i_nominal_tagihan).'</td>
 			<td>';
 			if($user_foto!==""){
