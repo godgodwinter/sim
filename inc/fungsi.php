@@ -212,6 +212,9 @@ function balikin2($str)
 
 
 
+
+
+
 //untuk stripfile
 function strip($string)
 	{

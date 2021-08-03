@@ -105,14 +105,19 @@ else
 				// //   var_dump($i_nominal_tagihan_int);
                     //cek
                     $qcc = mysqli_query($koneksi, "SELECT * FROM tagihan_siswa ".
-                                            "WHERE  tapel = '$i_tapel' AND kelas = '$i_kelas'");
+                                            "WHERE  kd = '$i_kd'");
                     $rcc = mysqli_fetch_assoc($qcc);
                     $tcc = mysqli_num_rows($qcc);
                     //jika ada, update				
                     if (!empty($tcc))
                         {
-                        mysqli_query($koneksi, "UPDATE tagihan_atur SET nominal_Tagihan = '$i_nominal_tagihan_int' ".
-                                        "WHERE tapel = '$i_tapel' AND kelas = '$i_kelas'");
+                        mysqli_query($koneksi, "UPDATE tagihan_siswa SET 
+                                        username_siswa = '$i_nis',
+                                        nama = '$i_nama',
+                                        tapel = '$i_tapel',
+                                        kelas = '$i_kelas',
+                                        tagihan_atur_kd = '$i_tagA' ".
+                                        "WHERE kd = '$i_kd'");
                         }
                     else
                         {

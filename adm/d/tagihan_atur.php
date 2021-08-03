@@ -764,6 +764,7 @@ foreach($sqlcaripersen as $datapersen){
 	<th style="width: 32px"></th>
 	<td width="150"><strong><font color="'.$warnatext.'">TAPEL</font></strong></td>
 	<td width="150"><strong><font color="'.$warnatext.'">KELAS</font></strong></td>
+	<td width="150"><strong><font color="'.$warnatext.'">KELAS coba</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">SCAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">WALI KELAS</font></strong></td>
@@ -790,10 +791,13 @@ foreach($sqlcaripersen as $datapersen){
 			$i_kd = nosql($data['kd']);
 			$i_tapel = balikin($data['tapel']);
 			$i_kelas = balikin($data['kelas']);
+			$i_kelas_coba = naik($data['kelas']);
 			$i_nominal_tagihan = balikin($data['nominal_tagihan']);
 			$username_guru = balikin($data['username_guru']);
 			$nama = balikin($data['nama']);
 			$user_foto = balikin($data['user_foto']);
+
+			
 			if($i_kd==0){
 
 			}else{	
@@ -806,6 +810,7 @@ foreach($sqlcaripersen as $datapersen){
 			</td>
 			<td>'.$i_tapel.'</td>
 			<td>'.$i_kelas.'</td>
+			<td>'.$i_kelas_coba.'</td>
 			<td>'.rupiah($i_nominal_tagihan).'</td>
 			<td>';
 			if($user_foto!==""){
