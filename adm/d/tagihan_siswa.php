@@ -35,6 +35,14 @@ $ke = "$filenya?s=import";
 xloc($ke);
 exit();
 }
+//jika import
+if ($_POST['btnIMDet'])
+{
+//re-direct
+$ke = "$filenya?s=importdet";
+xloc($ke);
+exit();
+}
 //lama
 //import sekarang
 if ($_POST['btnIMX'])
@@ -143,6 +151,114 @@ else
         }
     }
 }
+
+//import sekarang
+if ($_POST['btnIMXDet'])
+{
+$filex_namex2 = strip(strtolower($_FILES['filex_xls']['name']));
+//nek null
+if (empty($filex_namex2))
+    {
+    //re-direct
+    $pesan = "Input Tidak Lengkap. Harap Diulangi...!!";
+    $ke = "$filenya?s=import";
+    pekem($pesan,$ke);
+    exit();
+    }
+else
+    {
+    //deteksi .xls
+    $ext_filex = substr($filex_namex2, -4);
+    if ($ext_filex == ".xls")
+        {
+        //nilai
+        $path1 = "../../filebox";
+        $path2 = "../../filebox/excel";
+        chmod($path1,0777);
+        chmod($path2,0777);
+        //nama file import, diubah menjadi baru...
+        $filex_namex2 = "tagihan_siswa.xls";
+        //mengkopi file
+        copy($_FILES['filex_xls']['tmp_name'],"../../filebox/excel/$filex_namex2");
+        //chmod
+        $path3 = "../../filebox/excel/$filex_namex2";
+        chmod($path1,0755);
+        chmod($path2,0777);
+        chmod($path3,0777);
+        //file-nya...
+        $uploadfile = $path3;
+        //require
+        require('../../inc/class/PHPExcel.php');
+        require('../../inc/class/PHPExcel/IOFactory.php');
+          // load excel
+          $load = PHPExcel_IOFactory::load($uploadfile);
+          $sheets = $load->getActiveSheet()->toArray(null,true,true,true);
+          $i = 1;
+          foreach ($sheets as $sheet) 
+              {
+            // karena data yang di excel di mulai dari baris ke 2
+            // maka jika $i lebih dari 1 data akan di masukan ke database
+            if ($i > 1) 
+                {
+                  // nama ada di kolom A
+                  // sedangkan alamat ada di kolom B
+                  $i_xyz = md5("$x$i");
+                  $i_no = cegah($sheet['A']);
+                  $i_kd = cegah($sheet['B']);
+                  $i_tagihan_siswa_kd = cegah($sheet['C']);
+                  $i_jml_bayar = cegah($sheet['D']);
+                  $i_tgl_bayar = cegah($sheet['E']);
+                  // $i_kelas = cegah($sheet['F']);
+                  // $i_tagA = cegah($sheet['G']);
+                
+				// 	//menghilangkan angka 00 dibelakang koma
+				//   $arr=(explode(",",$i_nominal_tagihan));
+				//   //menghilangkan selain angka
+				//   $i_nominal_tagihan_str = preg_replace("/[^0-9]/", "", $arr[0]);
+				//   //konversi ke int
+				// //   var_dump($i_nominal_tagihan_str);
+				//   $i_nominal_tagihan_int = (int) $i_nominal_tagihan_str;
+				// //   var_dump($i_nominal_tagihan_int);
+                    //cek
+                    $qcc = mysqli_query($koneksi, "SELECT * FROM tagihan_siswa_detail ".
+                                            "WHERE  kd = '$i_kd' AND tagihan_siswa_kd = '$i_tagihan_siswa_kd'");
+                    $rcc = mysqli_fetch_assoc($qcc);
+                    $tcc = mysqli_num_rows($qcc);
+                    //jika ada, update				
+                    if (!empty($tcc))
+                        {
+                        mysqli_query($koneksi, "UPDATE tagihan_siswa_detail SET jml_bayar = '$i_jml_bayar' ".
+                                        "WHERE kd = '$i_kd' AND tagihan_siswa_kd = '$i_tagihan_siswa_kd'");
+                        }
+                    else
+                        {
+                        //insert
+                        mysqli_query($koneksi, "INSERT INTO tagihan_siswa_detail(kd, tagihan_siswa_kd, jml_bayar, tgl_bayar) VALUES ".
+                                        "('$i_kd', '$i_tagihan_siswa_kd', '$i_jml_bayar', '$i_tgl_bayar')");
+						}
+					//	var_dump("INSERT INTO tagihan_atur(kd,tapel, kelas, nominal_Tagihan) VALUES ".
+				//		"('','$i_tapel', '$i_kelas', '$i_nominal_tagihan_int')");
+                }
+            $i++;
+          }
+        //hapus file, jika telah import
+        $path1 = "../../filebox/excel/$filex_namex2";
+        chmod($path1,0777);
+        unlink ($path1);
+        //re-direct
+        xloc($filenya);
+        exit();
+        }
+    else
+        {
+        //salah
+        $pesan = "Bukan File .xls . Harap Diperhatikan...!!";
+        $ke = "$filenya?s=import";
+        pekem($pesan,$ke);
+        exit();
+        }
+    }
+}
 //jika export
 //export
 if ($_POST['btnEX'])
@@ -197,6 +313,63 @@ do
     $worksheet1->write_string($dt_nox,4,$dt_tapel);
     $worksheet1->write_string($dt_nox,5,$dt_kelas);
     $worksheet1->write_string($dt_nox,6,$dt_tagA);
+    }
+while ($rdt = mysqli_fetch_assoc($qdt));
+//close
+$workbook->close();
+//re-direct
+xloc($filenya);
+exit();
+}
+
+
+//export
+if ($_POST['btnEXDet'])
+{
+//require
+require('../../inc/class/excel/OLEwriter.php');
+require('../../inc/class/excel/BIFFwriter.php');
+require('../../inc/class/excel/worksheet.php');
+require('../../inc/class/excel/workbook.php');
+//nama file e...
+$i_filename = "tagihan_siswa_detail.xls";
+$i_judul = "Pengaturan Tagihan";
+//header file
+function HeaderingExcel($i_filename)
+    {
+    header("Content-type:application/vnd.ms-excel");
+    header("Content-Disposition:attachment;filename=$i_filename");
+    header("Expires: 0");
+    header("Cache-Control: must-revalidate, post-check=0,pre-check=0");
+    header("Pragma: public");
+    }
+//bikin...
+HeaderingExcel($i_filename);
+$workbook = new Workbook("-");
+$worksheet1 =& $workbook->add_worksheet($i_judul);
+$worksheet1->write_string(0,0,"NO.");
+$worksheet1->write_string(0,1,"KD.");
+$worksheet1->write_string(0,2,"TAGIHANSISWAKD.");
+$worksheet1->write_string(0,3,"JML BAYAR");
+$worksheet1->write_string(0,4,"TGLBAYAR");
+//data
+$qdt = mysqli_query($koneksi, "SELECT * FROM tagihan_siswa_detail ".
+                        "ORDER BY tagihan_siswa_kd ASC");
+$rdt = mysqli_fetch_assoc($qdt);
+do
+    {
+    //nilai
+    $dt_nox = $dt_nox + 1;
+    $dt_kd = balikin($rdt['kd']);
+    $dt_tagihansiswa_kd = balikin($rdt['tagihan_siswa_kd']);
+    $dt_jml_bayar = balikin($rdt['jml_bayar']);
+    $dt_tgl_bayar = balikin($rdt['tgl_bayar']);
+    //ciptakan
+    $worksheet1->write_string($dt_nox,0,$dt_nox);
+    $worksheet1->write_string($dt_nox,1,$dt_kd);
+    $worksheet1->write_string($dt_nox,2,$dt_tagihansiswa_kd);
+    $worksheet1->write_string($dt_nox,3,$dt_jml_bayar);
+    $worksheet1->write_string($dt_nox,4,$dt_tgl_bayar);
     }
 while ($rdt = mysqli_fetch_assoc($qdt));
 //close
@@ -490,11 +663,11 @@ if ($s == "import")
 		<?php
 	echo '<form action="'.$filenya.'" method="post" enctype="multipart/form-data" name="formxx2">
 	<p>
-		<input name="filex_xls" type="file" size="30" class="btn btn-warning">
+		<input name="filex_xls" type="file" size="30" class="btn btn-default">
 	</p>
 	<p>
-		<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info">
-		<input name="btnIMX" type="submit" value="IMPORT >>" class="btn btn-danger">
+		<input name="btnBTL" type="submit" value="BATAL" class="btn btn-info btn-sm">
+		<input name="btnIMX" type="submit" value="IMPORT" class="btn btn-primary btn-sm">
 	</p>
 	</form>';	
 	?>
@@ -503,6 +676,29 @@ if ($s == "import")
 
 <?php
 	}
+  //jika importdet
+else if ($s == "importdet")
+{
+?>
+<div class="row">
+<div class="col-md-12">
+  <?php
+  echo'<h3>Import Tagihan Siswa Detail</h3><br>';
+echo '<form action="'.$filenya.'" method="post" enctype="multipart/form-data" name="formxx2">
+<p>
+  <input name="filex_xls" type="file" size="30" class="btn btn-default">
+</p>
+<p>
+  <input name="btnBTL" type="submit" value="BATAL" class="btn btn-info btn-sm">
+  <input name="btnIMXDet" type="submit" value="IMPORT" class="btn btn-primary btn-sm">
+</p>
+</form>';	
+?>
+</div>
+</div>
+
+<?php
+}
 //jika edit / baru
 else if (($s == "baru") OR ($s == "edit"))
 	{
@@ -642,16 +838,27 @@ foreach($sqlcaripersen as $datapersen){
     <a href="tagihan_atur.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Atur Tagihan</a>
     <a href="siswa.php" name="btnBARU" type="submit" value="ENTRI BARU" class="btn btn-info  btn-sm">Siswa</a>
   
-    <button name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Upload </button>
-    <button name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm"><i class="zmdi zmdi-case-download"></i> Export</button>
+    <!-- <button name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Upload </button> --> 
     <button name="btnIM" type="submit" value="Import" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Import </button>
+    <button name="btnEX" type="submit" value="Export" class="btn btn-success btn-sm"><i class="zmdi zmdi-case-download"></i> Export</button>
+   
 <?php 
 
 $i_tapel = balikin($gettapel);
 $i_kelas = balikin($getkelas);
 ?>
     <a name="btnCetak"  href="tagihan_siswa_cetakall.php?tapel=<?=$i_tapel;?>&kelas=<?=$i_kelas;?>" class="btn btn-success btn-sm"><i class="zmdi zmdi-print"></i> Cetak PDF</a>
+ 
    
+   
+  </p>
+  <p>     
+    
+  <button name="btnIMDet" type="submit" value="ImportDet" class="btn btn-outline-primary btn-sm"><i class="zmdi zmdi-upload"></i> Import Detail</button>
+    <button name="btnEXDet" type="submit" value="ExportDet" class="btn btn-success btn-sm"><i class="zmdi zmdi-case-download"></i> Export Detail</button>
+    
+
+
   </p>
       
     </div>

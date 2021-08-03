@@ -219,7 +219,7 @@ if ($count != 0)
 		'.$i_nama.'
 		
 		<hr>
-		<a href="'.$filenya.'?s=reset&kd='.$i_kd.'" class="btn btn-primary">RESET PASSWORD >></a>
+		<a href="'.$filenya.'?s=reset&kd='.$i_kd.'" class="btn btn-primary btn-sm"><i class="zmdi zmdi-refresh-sync"></i> RESET PASSWORD</a>
 		</td>
         </tr>';
 		}
