@@ -61,7 +61,8 @@ if ($_POST['btnCARI'])
 if ($s == "reset")
 	{ 
 	//nilai
-	$nilku = substr($x,0,5);
+	$nilku = 'siswa123';
+	// $nilku = substr($x,0,5);
 	
 	//pass baru
 	$passbarux = md5($nilku);
