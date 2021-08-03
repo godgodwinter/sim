@@ -1030,8 +1030,12 @@ foreach ($result as $tampilkan){
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Close</button>
-                <input name="page" type="hidden" value="'.$page.'">
-                <input name="btnBAYAR" type="submit" value="BAYAR" class="btn btn-primary">
+                <input name="page" type="hidden" value="'.$page.'">';
+                ?>
+                
+    <a name="btnCetak"  href="tagihan_siswa_cetakdetail.php?tagihan_siswa_kd=<?=$i_kd;?>" class="btn btn-success btn-sm"><i class="zmdi zmdi-print"></i> Cetak PDF</a>
+<?php
+                echo'<input name="btnBAYAR" type="submit" value="BAYAR" class="btn btn-primary btn-sm">
               </div>
             </form>
               <div class="modal-footer">';
