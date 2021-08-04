@@ -45,6 +45,24 @@ $qyuk = mysqli_query($koneksi, "SELECT * FROM m_user");
 $jml_siswa = mysqli_num_rows($qyuk);
 
 
+
+//jml user siswa alumni
+$jml_alumni=0;
+$sqlqueryalumni= "SELECT * FROM m_user ORDER BY nama ASC";
+	$ambildataalumni = mysqli_query($koneksi, $sqlqueryalumni);
+	// var_dump($gettagihan_siswa_kd);
+			while($dataalumni = mysqli_fetch_array($ambildataalumni)){
+          $kelasnamaalumni=$dataalumni['kelas_nama'];
+          $cekkelas=explode(" ",$kelasnamaalumni);
+          // echo$cekkelas[0].'-';
+            if(($cekkelas[0]==='Alumni')){
+                $jml_alumni+=1;
+            }
+      }
+//jml user siswa aktif
+$jml_siswa_aktif = $jml_siswa-$jml_alumni;
+
+
 //jml kelas
 $qyuk = mysqli_query($koneksi, "SELECT * FROM m_kelas");
 $jml_kelas = mysqli_num_rows($qyuk);
@@ -204,7 +222,7 @@ ob_start();
                     <i class="zmdi zmdi-caret-up"></i>
                   </span>
                 </div>
-                <div class="wt-number"><?php echo $jml_siswa;?></div>
+                <div class="wt-number"><?php echo $jml_siswa_aktif;?></div>
                 <div class="wt-text">Diambil dari data Tahun Pelajaran <?=$tapelsebelumnya;?></div>
               </div>
               <div class="wt-icon">
