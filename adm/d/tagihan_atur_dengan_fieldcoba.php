@@ -693,27 +693,18 @@ else if (($s == "baru") OR ($s == "edit"))
 	}
 else
 	{
-		
-$jml_alumni=0;
-$sqlquerysetting= "SELECT * FROM admin_setting ORDER BY id ASC";
-	$ambildatasetting = mysqli_query($koneksi, $sqlquerysetting);
-	// var_dump($gettagihan_siswa_kd);
-			while($datasetting = mysqli_fetch_array($ambildatasetting)){
-				$tapelsetting=$datasetting['tapel'];
-
-			}
 	//jika null
 	if (empty($kunci))
 		{
-		$sqlcount = "SELECT * FROM tagihan_atur WHERE tapel='$tapelsetting' ".
+		$sqlcount = "SELECT * FROM tagihan_atur ".
 						"ORDER BY tapel ASC";
 		}
 	else
 		{
 		$sqlcount = "SELECT * FROM tagihan_atur ".
-						"WHERE tapel='$tapelsetting'  AND kode LIKE '%$kunci%' ".
-						"OR  tapel='$tapelsetting'  AND tapel LIKE '%$kunci%' ".
-						"OR  tapel='$tapelsetting'  AND kelas LIKE '%$kunci%' ".
+						"WHERE kode LIKE '%$kunci%' ".
+						"OR tapel LIKE '%$kunci%' ".
+						"OR kelas LIKE '%$kunci%' ".
 						"ORDER BY tapel ASC";
 		}
 	//query
@@ -772,7 +763,9 @@ foreach($sqlcaripersen as $datapersen){
 	<th style="width: 32px"></th>
 	<th style="width: 32px"></th>
 	<td width="150"><strong><font color="'.$warnatext.'">TAPEL</font></strong></td>
+	<td width="150"><strong><font color="'.$warnatext.'">TAPEL coba</font></strong></td>
 	<td width="150"><strong><font color="'.$warnatext.'">KELAS</font></strong></td>
+	<td width="150"><strong><font color="'.$warnatext.'">KELAS coba</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">NOMINAL TAGIHAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">SCAN</font></strong></td>
 	<td ><strong><font color="'.$warnatext.'">WALI KELAS</font></strong></td>
@@ -816,7 +809,9 @@ foreach($sqlcaripersen as $datapersen){
 			<a href="'.$filenya.'?s=edit&page='.$page.'&kd='.$i_kd.'"  class="btn btn-warning btn-sm"><i class="zmdi zmdi-edit"></i></a>
 			</td>
 			<td>'.$i_tapel.'</td>
+			<td>'.$i_tapel_coba.'</td>
 			<td>'.$i_kelas.'</td>
+			<td>'.$i_kelas_coba.'</td>
 			<td>'.rupiah($i_nominal_tagihan).'</td>
 			<td>';
 			if($user_foto!==""){
