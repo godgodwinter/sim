@@ -72,6 +72,19 @@ $rekap_masuk = mysqli_num_rows($qyuk);
 
 
 
+//tapelaktif
+$sqlquery = "SELECT * FROM admin_setting WHERE id='1'";
+
+$ambildata = mysqli_query($koneksi, $sqlquery);
+// var_dump($gettagihan_siswa_kd);
+while($data = mysqli_fetch_array($ambildata)){
+    
+    $tapelsebelumnya=balikin($data['tapel']);
+    $tapelaktif=naik_t(balikin($data['tapel']));
+}
+
+$judul = "Tahun Pelajaran '".$tapelsebelumnya."'";
+
 
 
 //isi *START
@@ -174,61 +187,59 @@ ob_start();
     // Get context with jQuery - using jQuery's .get() method.
     var areaChartCanvas = $('#areaChart').get(0).getContext('2d')
     // This will get the first returned node in the jQuery collection.
-    var areaChart       = new Chart(areaChartCanvas)
+    var areaChart = new Chart(areaChartCanvas)
 
     var areaChartData = {
-      labels  : [<?php echo $isi_data1;?>],
-      datasets: [
-        {
-          label               : 'Visitor Seminggu ini',
-          fillColor           : 'rgba(60,141,188,0.9)',
-          strokeColor         : 'rgba(60,141,188,0.8)',
-          pointColor          : '#3b8bba',
-          pointStrokeColor    : 'rgba(60,141,188,1)',
-          pointHighlightFill  : '#fff',
-          pointHighlightStroke: 'rgba(60,141,188,1)',
-          data                : [<?php echo $isi_data2;?>]
-        }
-      ]
+      labels: [ < ? php echo $isi_data1; ? > ],
+      datasets: [{
+        label: 'Visitor Seminggu ini',
+        fillColor: 'rgba(60,141,188,0.9)',
+        strokeColor: 'rgba(60,141,188,0.8)',
+        pointColor: '#3b8bba',
+        pointStrokeColor: 'rgba(60,141,188,1)',
+        pointHighlightFill: '#fff',
+        pointHighlightStroke: 'rgba(60,141,188,1)',
+        data: [ < ? php echo $isi_data2; ? > ]
+      }]
     }
 
     var areaChartOptions = {
       //Boolean - If we should show the scale at all
-      showScale               : true,
+      showScale: true,
       //Boolean - Whether grid lines are shown across the chart
-      scaleShowGridLines      : false,
+      scaleShowGridLines: false,
       //String - Colour of the grid lines
-      scaleGridLineColor      : 'rgba(0,0,0,.05)',
+      scaleGridLineColor: 'rgba(0,0,0,.05)',
       //Number - Width of the grid lines
-      scaleGridLineWidth      : 1,
+      scaleGridLineWidth: 1,
       //Boolean - Whether to show horizontal lines (except X axis)
       scaleShowHorizontalLines: true,
       //Boolean - Whether to show vertical lines (except Y axis)
-      scaleShowVerticalLines  : true,
+      scaleShowVerticalLines: true,
       //Boolean - Whether the line is curved between points
-      bezierCurve             : true,
+      bezierCurve: true,
       //Number - Tension of the bezier curve between points
-      bezierCurveTension      : 0.3,
+      bezierCurveTension: 0.3,
       //Boolean - Whether to show a dot for each point
-      pointDot                : false,
+      pointDot: false,
       //Number - Radius of each point dot in pixels
-      pointDotRadius          : 4,
+      pointDotRadius: 4,
       //Number - Pixel width of point dot stroke
-      pointDotStrokeWidth     : 1,
+      pointDotStrokeWidth: 1,
       //Number - amount extra to add to the radius to cater for hit detection outside the drawn point
-      pointHitDetectionRadius : 20,
+      pointHitDetectionRadius: 20,
       //Boolean - Whether to show a stroke for datasets
-      datasetStroke           : true,
+      datasetStroke: true,
       //Number - Pixel width of dataset stroke
-      datasetStrokeWidth      : 2,
+      datasetStrokeWidth: 2,
       //Boolean - Whether to fill the dataset with a color
-      datasetFill             : true,
+      datasetFill: true,
       //String - A legend template
-      legendTemplate          : '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].lineColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
+      legendTemplate: '<ul class="<%=name.toLowerCase()%>-legend"><% for (var i=0; i<datasets.length; i++){%><li><span style="background-color:<%=datasets[i].lineColor%>"></span><%if(datasets[i].label){%><%=datasets[i].label%><%}%></li><%}%></ul>',
       //Boolean - whether to maintain the starting aspect ratio or not when responsive, if set to false, will take up entire container
-      maintainAspectRatio     : true,
+      maintainAspectRatio: true,
       //Boolean - whether to make the chart responsive to window resizing
-      responsive              : true
+      responsive: true
     }
 
     //Create the line chart
@@ -239,49 +250,60 @@ ob_start();
 </script>
 
 
-              
-                  <!-- Info boxes -->
-                  
-        <!-- <div class="row col-md-offset-1"> -->
-        <div class="row ">
-          <div class="col-md-3 col-sm-6">
-          <div class="widget widget-tile-2 bg-primary m-b-30">
-              <div class="wt-content p-a-20 p-b-50">
-                <div class="wt-title">Siswa
-                  <span class="t-caret text-success">
-                    <i class="zmdi zmdi-caret-up"></i>
-                  </span>
-                </div>
-                <div class="wt-number"><?php echo $jml_siswa;?></div>
-                <div class="wt-text">Updated today at 14:57</div>
-              </div>
-              <div class="wt-icon">
-                <i class="zmdi zmdi-accounts"></i>
-              </div>
-              <div class="wt-chart">
-                <span id="peity-chart-1">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,2,1</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-          <div class="widget widget-tile-2 bg-warning m-b-30">
-              <div class="wt-content p-a-20 p-b-50">
-                <div class="wt-title">Kelas</div>
-                <div class="wt-number"><?php echo $jml_kelas;?></div>
-                <div class="wt-text">Updated at 2020</div>
-              </div>
-              <div class="wt-icon">
-                <i class="zmdi zmdi-shopping-basket"></i>
-              </div>
-              <div class="wt-chart">
-                <span id="peity-chart-2">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,5,9</span>
-              </div>
-          </div>
-          
-        </div>
 
-      <div class="row">  
-        <!-- <div class="row">
+<!-- Info boxes -->
+
+<!-- <div class="row col-md-offset-1"> -->
+<div class="row ">
+
+<div class="col-md-6 col-sm-6">
+    <div class="widget widget-tile-2 bg-warning m-b-30">
+      <div class="wt-content p-a-20 p-b-50">
+        <div class="wt-title">Kelas</div>
+        <div class="wt-number"><?php echo $jml_kelas;?></div>
+                <div class="wt-text">Diambil dari data Tahun Pelajaran <?=$tapelsebelumnya;?></div>
+      </div>
+      <div class="wt-icon">
+        <i class="zmdi zmdi-shopping-basket"></i>
+      </div>
+      <div class="wt-chart">
+        <span id="peity-chart-2">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,5,9</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-6 col-sm-6">
+    <div class="widget widget-tile-2 bg-primary m-b-30">
+      <div class="wt-content p-a-20 p-b-50">
+        <div class="wt-title">Siswa
+          <span class="t-caret text-success">
+            <i class="zmdi zmdi-caret-up"></i>
+          </span>
+        </div>
+        <div class="wt-number"><?php echo $jml_siswa;?></div>
+        <div class="wt-text">Updated today at 14:57</div>
+      </div>
+      <div class="wt-icon">
+        <i class="zmdi zmdi-accounts"></i>
+      </div>
+      <div class="wt-chart">
+        <span id="peity-chart-1">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,2,1</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6 col-sm-6">
+    <div class="widget m-b-30">
+      <a name="btnSOY" href="soy.php" type="submit" value="SoY" class="btn btn-success btn-xl"><i
+          class="zmdi zmdi-refresh"></i> Start Of Year</a>
+
+    </div>
+  </div>
+</div>
+<div class="row">
+  <!-- <div class="row">
               <div class="col-md-12 m-b-30">
                 <h4 class="m-t-0 m-b-30">Line chart</h4>
                 <canvas id="line" style="height: 300px"></canvas>
@@ -292,26 +314,26 @@ ob_start();
               </div>
 
             </div> -->
-         
-      
 
 
 
 
 
 
-        <!-- /.col -->
-        
-        <!-- /.col -->
+
+
+  <!-- /.col -->
+
+  <!-- /.col -->
 
 
 
 
-        <!-- /.col -->
-      </div>
-      <!-- /.row -->
+  <!-- /.col -->
+</div>
+<!-- /.row -->
 
-      <!-- <div class="row">    
+<!-- <div class="row">    
         <div class="col-md-12">
           	<div class="box">
             <div class="box-header with-border">
@@ -338,12 +360,12 @@ ob_start();
               </div> -->
 
 
-                
-                
 
 
 
-            
+
+
+
 <?php
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
