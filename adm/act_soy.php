@@ -168,8 +168,9 @@ ob_end_clean();
 ob_start();
 
 //jika POST[tapelbaru] kosong maka redirek ke beranda
-$tapelaktif=$_POST['tapelaktif'];
-$tapelsebelumnya=$_POST['tapelsebelumnya'];
+$tapelaktif=cegah($_POST['tapelaktif']);
+$tapelsebelumnya=cegah($_POST['tapelsebelumnya']);
+// $tapel = cegah($_POST['tapel']);
 // echo $tapelaktif;
 if(empty($tapelaktif)){
 	
@@ -178,14 +179,120 @@ xloc($filenya);
 exit();
 }else{
 	//SoYs
-	// 1. buat tapel aktif baru
+	// 1. buat tapel aktif baru	
+							mysqli_query($koneksi, "INSERT INTO m_tapel(kd, tapel, postdate) VALUES ".
+							"('$x', '$tapelaktif', '$today')");
+	
+
 	// 2. seleck kelas ambil name
-	//     a. ubah semua name === yang sama ,, di tabel user siswa d
-	// 	b. tambahkan siswa dengan kelas name sama(yang lama) ke tabel tagihan siswa dengan kelas dan tapel baru(nama baru)
-	// 3. ubah tabel semua di tabel siswa dengan siswa kelas baru
-	// 4. Redirek ke tabel kelas
-	echo $tapelsebelumnya;
-	echo $tapelaktif;
+	//     a. ubah semua siswa yang namakelas+tapel === yang sama ,, di tabel user siswa
+	// 	b. tambahkan kelas name sama(yang baru)+tapelbaru ke tabel tagihan atur
+
+	// 	c. tambahkan siswa dengan kelas name sama(yang lama) ke tabel tagihan siswa dengan kelas dan tapel baru(nama baru)
+	
+$sqlquery = "SELECT * FROM m_kelas  ORDER BY `m_kelas`.`kelas` ASC";
+
+$ambildata = mysqli_query($koneksi, $sqlquery);
+// var_dump($gettagihan_siswa_kd);
+	while($data = mysqli_fetch_array($ambildata)){
+		$kdkelas=$data['kd'];
+		$kelas_nama=$data['kelas'];
+		$kelas_namabaru=naik_k($kelas_nama);
+		// echo $kelas_nama."<br>";
+		// echo  "SELECT * FROM m_user WHERE tapel_nama='$tapelsebelumnya' AND kelas_nama='$kelas_nama'  ORDER BY nama ASC";
+	$sqlquerydua_a = "SELECT * FROM m_user WHERE tapel_nama='$tapelsebelumnya' AND kelas_nama='$kelas_nama'  ORDER BY nama ASC";
+	$ambildatadua_a = mysqli_query($koneksi, $sqlquerydua_a);
+	// var_dump($gettagihan_siswa_kd);
+			while($datadua_a = mysqli_fetch_array($ambildatadua_a)){
+					$namausersiswa=$datadua_a['nama'];
+					$nomorusersiswa=$datadua_a['nomor'];
+					// echo '-'.$namausersiswa.'-';
+					
+					//2.a. update tapel dan kelas dengan yang baru di tabel m_user
+					
+					
+										mysqli_query($koneksi, "UPDATE m_user SET tapel_nama = '$tapelaktif',kelas_nama='$kelas_namabaru' ".
+										"WHERE nomor = '$nomorusersiswa'");	
+			}
+							
+				//2.b. insert tapelbaru dan kelas baru di tagihan atur
+							$cekkelas=explode(" ",$kelas_namabaru);
+							// echo$cekkelas[0].'-';
+								if(!($cekkelas[0]==='Alumni')){
+									mysqli_query($koneksi, "INSERT INTO tagihan_atur(tapel, kelas, nominal_tagihan,user_foto,username_guru,nama) VALUES ".
+									"('$tapelaktif', '$kelas_namabaru','100','','','')");
+								}else{
+									//alumni tidak perlu kelas
+								}
+
+		//2.c.  tambahkan siswa dengan kelas name sama(yang lama) ke tabel tagihan siswa dengan kelas dan tapel baru(nama baru)
+				// 2.c.1 ambil data kd tagihan atur berdasarkan tapelbaru+kelasbaru
+				
+				// echo"SELECT * FROM tagihan_atur WHERE tapel='$tapelaktif' AND kelas='$kelas_namabaru'  ORDER BY tapel ASC";
+$sqlquerydua_csatu = "SELECT * FROM tagihan_atur WHERE tapel='$tapelaktif' AND kelas='$kelas_namabaru'  ORDER BY tapel ASC";
+$ambildatadua_csatu = mysqli_query($koneksi, $sqlquerydua_csatu);
+// var_dump($gettagihan_siswa_kd);
+while($datadua_csatu = mysqli_fetch_array($ambildatadua_csatu)){
+		$kdtagihanatur=$datadua_csatu['kd'];
+		// echo '-'.$kdtagihanatur.'-';
+		
+				// 2.c.2 insert semua siswa ke tabel tagihan siswa dari kelas dan tapel lama di tabel siswa
+				// echo "SELECT * FROM m_user WHERE tapel_nama='$tapelaktif' AND kelas_nama='$kelas_namabaru'  ORDER BY nama ASC";
+$sqlquerydua_cdua = "SELECT * FROM m_user WHERE tapel_nama='$tapelaktif' AND kelas_nama='$kelas_namabaru'  ORDER BY nama ASC";
+$ambildatadua_cdua = mysqli_query($koneksi, $sqlquerydua_cdua);
+// var_dump($gettagihan_siswa_kd);
+while($datadua_cdua = mysqli_fetch_array($ambildatadua_cdua)){
+		$nomorsiswabaru=$datadua_cdua['nomor'];
+		$namasiswabaru=$datadua_cdua['nama'];
+		// echo$namasiswabaru.'-';
+
+								//
+								mysqli_query($koneksi, "INSERT INTO tagihan_siswa(username_siswa, nama, tapel, kelas, tagihan_atur_kd) VALUES ".
+								"('$nomorsiswabaru', '$namasiswabaru','$tapelaktif', '$kelas_namabaru', '$kdtagihanatur')");
+
+}
+
+
+
+
+}
+						
+				
+
+
+	// 3. ubah tabel semua di tabel kelas dengan kelas kelas baru
+	
+										mysqli_query($koneksi, "UPDATE m_kelas SET kelas='$kelas_namabaru' ".
+										"WHERE kd = '$kdkelas'");
+										
+										//hapus kelas alumni (bukan data siswa alumni)
+										
+							$cekkelas=explode(" ",$kelas_namabaru);
+							// echo$cekkelas[0].'-';
+								if(($cekkelas[0]==='Alumni')){
+									
+									mysqli_query($koneksi, "DELETE FROM m_kelas ".
+									"WHERE kd = '$kdkelas'");
+								
+								}
+
+
+	// 4. update adminsetting tapel baru
+	
+	mysqli_query($koneksi, "UPDATE admin_setting SET tapel='$tapelaktif' ".
+	"WHERE id = '1'");
+	// 5. Redirek ke ke index/beranda
+	
+	// echo $tapelsebelumnya;
+	// echo $tapelaktif;
+
+
+}
+
+xloc($filenya);
+exit();
+
+
 }
 
 ?>

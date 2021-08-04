@@ -256,7 +256,7 @@ ob_start();
 <!-- <div class="row col-md-offset-1"> -->
 <div class="row ">
 
-<div class="col-md-6 col-sm-6">
+<div class="col-md-4 col-sm-4">
     <div class="widget widget-tile-2 bg-warning m-b-30">
       <div class="wt-content p-a-20 p-b-50">
         <div class="wt-title">Kelas</div>
@@ -272,10 +272,10 @@ ob_start();
     </div>
 
   </div>
-  <div class="col-md-6 col-sm-6">
+  <div class="col-md-4 col-sm-4">
     <div class="widget widget-tile-2 bg-primary m-b-30">
       <div class="wt-content p-a-20 p-b-50">
-        <div class="wt-title">Siswa
+        <div class="wt-title">Siswa Aktif
           <span class="t-caret text-success">
             <i class="zmdi zmdi-caret-up"></i>
           </span>
@@ -288,6 +288,22 @@ ob_start();
       </div>
       <div class="wt-chart">
         <span id="peity-chart-1">7,3,8,4,4,8,10,3,4,5,9,2,5,1,4,2,9,8,2,1</span>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 col-sm-4">
+    <div class="widget widget-tile-2 bg-primary m-b-30">
+      <div class="wt-content p-a-20 p-b-50">
+        <div class="wt-title">Alumni Siswa
+          <span class="t-caret text-success">
+            <i class="zmdi zmdi-caret-up"></i>
+          </span>
+        </div>
+        <div class="wt-number"><?php echo $jml_siswa;?></div>
+        <div class="wt-text">Updated today at 14:57</div>
+      </div>
+      <div class="wt-icon">
+        <i class="zmdi zmdi-accounts"></i>
       </div>
     </div>
   </div>

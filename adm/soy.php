@@ -257,6 +257,7 @@ while($data = mysqli_fetch_array($ambildata)){
   </div>
                
                <li>Data siswa yang ada, akan mengikuti tahun pelajaran yang aktif</li>
+               <li>Tambahkan tapelbaru dan kelas baru di tagihan atur dengan nominal tagihan default 0 (alumni tidak di tambahkan)</li>
           
                <li>Data Pembayaran Tahun <?=$tapelsebelumnya;?> (Tahun Sebelumnya) Tetap Tersimpan</li>
                <li>Tambah Tagihan Siswa di Tahun Pelajaran <?=$tapelaktif;?> dengan data Pembayaran Kosong</li>
