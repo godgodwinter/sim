@@ -280,9 +280,13 @@ while($data = mysqli_fetch_array($ambildata)){
 <div class="row">
   <div class="col-md-6 col-sm-6">
     <div class="widget m-b-30">
-      <a name="btnSOY" href="soy.php" type="submit" value="SoY" class="btn btn-primary btn-xl"><i
-          class="zmdi zmdi-refresh"></i> Simpan Start Of Year</a>
-
+  </form>
+    <form name="formx" method="post" action="act_soy.php">
+    <input  name="tapelaktif" id="form-control-3" class="form-control b-a-2" type="hidden"  value="<?=$tapelaktif;?>">
+    <input  name="tapelsebelumnya" id="form-control-3" class="form-control b-a-2" type="hidden"  value="<?=$tapelsebelumnya;?>">
+      <button type="submit" class="btn btn-primary btn-xl"><i
+          class="zmdi zmdi-refresh"></i> Simpan Start Of Year</button>
+    </form>
     </div>
   </div>
 </div>
