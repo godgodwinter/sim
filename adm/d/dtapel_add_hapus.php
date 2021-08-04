@@ -203,10 +203,7 @@ require("../../inc/js/checkall.js");
 
 
 //view //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-?>
 
-<h5>Gunakan SoY dihalaman Beranda untuk menambah Tahun Pelajaran!</h5>
-<?php
 echo '<form name="formx" method="post" action="'.$filenya.'">
 <table width="100%" height="300" border="0" cellspacing="3" cellpadding="0">
 <tr valign="top">
