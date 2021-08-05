@@ -706,42 +706,30 @@ else if (($s == "baru") OR ($s == "edit"))
 	}
 else
 	{
-	//jika null
-	if (empty($kunci))
-		{
-            $gettapel=cegah($_GET['tapel']);
-            $getkelas=$_GET['kelas'];
-            if (!empty($gettapel) AND !empty($getkelas)){   
-		$sqlcount = "SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tapel='$gettapel' AND tagihan_siswa.kelas='$getkelas' AND tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY tagihan_siswa.nama ASC";
-        // var_dump("SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tapel='$gettapel' AND tagihan_siswa.kelas='$getkelas' AND tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY username_siswa ASC");
-		// $sqlcount = "SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY username_siswa ASC";
-        }else{
-//JIKA BELUM MEMILIH TAPEL
-$sqlambildatatapelterbaru="SELECT * FROM m_tapel";
-$sqlambildatatapelterbaru2 = mysqli_query($koneksi, "$sqlambildatatapelterbaru");
-foreach ($sqlambildatatapelterbaru2 as $ambiltapel){
-  $tapelterbaru=$ambiltapel['tapel'];
-}
-// var_dump("SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd AND tagihan_siswa.tapel='$tapelterbaru'  ORDER BY username_siswa ASC");
-// die;
-
-
-            $sqlcount = "SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd AND tagihan_siswa.tapel='$tapelterbaru' ORDER BY tagihan_siswa.nama ASC";
+    $jml_alumni=0;
+    $sqlquerysetting= "SELECT * FROM admin_setting ORDER BY id ASC";
+      $ambildatasetting = mysqli_query($koneksi, $sqlquerysetting);
+      // var_dump($gettagihan_siswa_kd);
+          while($datasetting = mysqli_fetch_array($ambildatasetting)){
+            $tapelsetting=$datasetting['tapel'];
+    
+          }
+      //jika null
+      if (empty($kunci))
+        {
+        $sqlcount = "SELECT * FROM tagihan_siswa WHERE tapel='$tapelsetting' ".
+                "ORDER BY tapel ASC";
         }
-    }
-	else
-		{
-            $gettapel=cegah($_GET['tapel']);
-            $getkelas=$_GET['kelas'];
-            if (!empty($gettapel) AND !empty($getkelas)){   
-        $sqlcount = "SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.nama LIKE '%$kunci%' AND tagihan_siswa.tapel='$gettapel' AND tagihan_siswa.kelas='$getkelas' AND tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY ORDER BY tagihan_siswa.nama ASC";
-       
-        // var_dump("SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tapel='$gettapel' AND tagihan_siswa.kelas='$getkelas' AND tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY username_siswa ASC");
-		// $sqlcount = "SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY username_siswa ASC";
-        }else{
-            $sqlcount = "SELECT tagihan_siswa.kd,tagihan_siswa.nama,tagihan_siswa.tapel,tagihan_siswa.kelas,tagihan_atur.nominal_tagihan,tagihan_siswa.username_siswa FROM tagihan_siswa INNER JOIN tagihan_atur WHERE  tagihan_siswa.nama LIKE '%$kunci%' AND tagihan_siswa.tagihan_atur_kd=tagihan_atur.kd ORDER BY tagihan_siswa.nama ASC";
+      else
+        {
+        $sqlcount = "SELECT * FROM tagihan_siswa ".
+                "WHERE tapel='$tapelsetting'  AND username_siswa LIKE '%$kunci%' ".
+                "OR  tapel='$tapelsetting'  AND tapel LIKE '%$kunci%' ".
+                "OR  tapel='$tapelsetting'  AND kelas LIKE '%$kunci%' ".
+                "ORDER BY tapel ASC";
         }
-		}
+    
+		
 	//query
 	$p = new Pager();
 	$start = $p->findStart($limit);

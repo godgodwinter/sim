@@ -65,9 +65,18 @@ if ($tcc == 0)
 	}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+//tapelaktif
+$sqlquery = "SELECT * FROM admin_setting WHERE id='1'";
 
+$ambildata = mysqli_query($koneksi, $sqlquery);
+// var_dump($gettagihan_siswa_kd);
+while($data = mysqli_fetch_array($ambildata)){
+    
+    $tapelsebelumnya=balikin($data['tapel']);
+    $tapelaktif=naik_t(balikin($data['tapel']));
+}
 
-
+$judul = "Tahun Pelajaran '".$tapelsebelumnya."'";
 
 
 
